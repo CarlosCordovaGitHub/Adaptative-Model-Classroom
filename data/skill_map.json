@@ -1,0 +1,23 @@
+{
+  "taxonomy_version": "1.0",
+  "topics": [
+    {
+      "topic_id": "t_derivadas",
+      "name": "Derivadas",
+      "skills": [
+        {
+          "skill_id": "k_regla_potencia",
+          "name": "Regla de la potencia",
+          "prerequisites": []
+        },
+        {
+          "skill_id": "k_regla_cadena",
+          "name": "Regla de la cadena",
+          "prerequisites": [
+            "k_regla_potencia"
+          ]
+        }
+      ]
+    }
+  ]
+}

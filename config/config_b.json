@@ -1,0 +1,81 @@
+{
+  "engine": {
+    "name": "AdaptiveEvaluationEngine",
+    "component": "B",
+    "version": "1.0.0"
+  },
+  "defaults": {
+    "language": "es",
+    "mode": "practice",
+    "item_format": "mcq",
+    "difficulty_label": "media",
+    "timezone": "America/Guayaquil"
+  },
+  "thresholds": {
+    "mastery_tau": 0.85,
+    "low_mastery_tau": 0.55,
+    "near_mastery_delta": 0.05,
+    "se_target": 0.4
+  },
+  "stopping_rules": {
+    "stop_if_se_leq": 0.4,
+    "stop_if_items_geq": 12,
+    "stop_if_time_ms_geq": 600000,
+    "stop_if_mastery_all_geq_tau": true
+  },
+  "policy": {
+    "policy_id": "hybrid_irt_bkt_v1",
+    "mode_selection": {
+      "use_irt_if": {
+        "se_theta_gt": 0.4
+      },
+      "use_bkt_if": {
+        "any_skill_mastery_leq": 0.55,
+        "any_skill_near_tau_delta": 0.05
+      },
+      "fallback": "BKT"
+    },
+    "item_selection": {
+      "irt_strategy": "max_fisher_information",
+      "bkt_strategy": "max_expected_learning_gain",
+      "tie_breakers": [
+        "min_exposure",
+        "not_recent",
+        "coverage_balance"
+      ]
+    },
+    "support_policy": {
+      "hint_on_consecutive_errors": 2,
+      "worked_example_on_consecutive_errors": 3,
+      "no_hint_on_consecutive_correct": 2,
+      "fatigue_rt_multiplier": 2.0
+    }
+  },
+  "constraints": {
+    "content_coverage": {
+      "min_topic_coverage_ratio": 0.6,
+      "max_consecutive_same_skill": 3
+    },
+    "exposure_control": {
+      "max_exposure_per_item_per_day": 200,
+      "exposure_penalty_lambda": 0.15,
+      "recent_window_items": 5
+    },
+    "anti_repeat": {
+      "block_repeat_in_session": true,
+      "block_repeat_within_days": 7
+    }
+  },
+  "telemetry": {
+    "enabled": true,
+    "log_level": "decision",
+    "fields": [
+      "theta_hat",
+      "se_theta",
+      "mastery",
+      "policy_used",
+      "chosen_item_id",
+      "support_type"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tesis.local/schemas/a_to_b_activity_result.schema.json",
+  "title": "A->B Activity Result",
+  "description": "Contrato de evento enviado desde Componente A (generador) al Componente B (motor adaptativo) cuando el estudiante completa una actividad.",
+  "type": "object",
+  "required": [
+    "event_type",
+    "event_version",
+    "student",
+    "context",
+    "activity",
+    "response"
+  ],
+  "properties": {
+    "event_type": {
+      "const": "activity_result",
+      "description": "Tipo de evento, siempre 'activity_result' para este contrato"
+    },
+    "event_version": {
+      "type": "string",
+      "description": "Versión del formato del evento"
+    },
+    "student": {
+      "type": "object",
+      "required": [
+        "student_id",
+        "session_id"
+      ],
+      "properties": {
+        "student_id": {
+          "type": "string",
+          "description": "Identificador único del estudiante"
+        },
+        "session_id": {
+          "type": "string",
+          "description": "Identificador único de la sesión actual"
+        }
+      },
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "topic_id",
+        "skill_ids",
+        "mode"
+      ],
+      "properties": {
+        "topic_id": {
+          "type": "string",
+          "description": "ID del tema (ej: t_derivadas)"
+        },
+        "skill_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "description": "Lista de skills evaluados en esta actividad"
+        },
+        "language": {
+          "type": "string",
+          "description": "Código de idioma (ej: es, en)"
+        },
+        "mode": {
+          "enum": [
+            "diagnostic",
+            "practice",
+            "exam"
+          ],
+          "description": "Modo de evaluación"
+        }
+      },
+      "additionalProperties": true
+    },
+    "activity": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "item_format",
+        "difficulty_label"
+      ],
+      "properties": {
+        "activity_id": {
+          "type": "string",
+          "description": "ID de la actividad generada (opcional)"
+        },
+        "item_id": {
+          "type": "string",
+          "description": "ID del ítem del banco usado"
+        },
+        "item_format": {
+          "enum": [
+            "mcq",
+            "true_false",
+            "open"
+          ],
+          "description": "Formato del ítem"
+        },
+        "difficulty_label": {
+          "enum": [
+            "facil",
+            "media",
+            "dificil"
+          ],
+          "description": "Etiqueta de dificultad del ítem"
+        },
+        "seed": {
+          "type": "integer",
+          "description": "Semilla para generación determinista de variantes"
+        }
+      },
+      "additionalProperties": true
+    },
+    "response": {
+      "type": "object",
+      "required": [
+        "is_correct",
+        "response_time_ms",
+        "hint_used"
+      ],
+      "properties": {
+        "is_correct": {
+          "type": "boolean",
+          "description": "Si la respuesta del estudiante fue correcta"
+        },
+        "response_time_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Tiempo de respuesta en milisegundos"
+        },
+        "hint_used": {
+          "type": "boolean",
+          "description": "Si el estudiante usó ayuda/hint"
+        },
+        "attempts_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Número de intentos realizados"
+        },
+        "selected_option": {
+          "type": "string",
+          "description": "Opción seleccionada (para MCQ)"
+        },
+        "hints_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Número de hints solicitados"
+        }
+      },
+      "additionalProperties": true
+    },
+    "telemetry": {
+      "type": "object",
+      "description": "Datos adicionales de telemetría opcionales"
+    }
+  },
+  "additionalProperties": true
+}

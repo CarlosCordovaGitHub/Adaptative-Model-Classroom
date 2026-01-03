@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "comment": "Parámetros BKT. IMPORTANTE: Estos valores son placeholders y DEBEN ser calibrados con datos reales usando EM o grid search.",
+  "defaults": {
+    "p_L0": 0.2,
+    "p_T": 0.15,
+    "p_G": 0.2,
+    "p_S": 0.1,
+    "p_F": 0.0,
+    "comment": {
+      "p_L0": "Probabilidad inicial de dominio",
+      "p_T": "Probabilidad de transición (aprendizaje)",
+      "p_G": "Probabilidad de guess (respuesta correcta sin dominio)",
+      "p_S": "Probabilidad de slip (respuesta incorrecta con dominio)",
+      "p_F": "Probabilidad de olvido (forget)"
+    }
+  },
+  "by_skill": {
+    "k_regla_potencia": {
+      "p_L0": 0.2,
+      "p_T": 0.15,
+      "p_G": 0.2,
+      "p_S": 0.1,
+      "p_F": 0.0,
+      "comment": "Regla de la potencia - skill fundamental, valores conservadores"
+    },
+    "k_regla_cadena": {
+      "p_L0": 0.1,
+      "p_T": 0.12,
+      "p_G": 0.25,
+      "p_S": 0.15,
+      "p_F": 0.0,
+      "comment": "Regla de la cadena - más difícil (p_L0 bajo, p_G alto)"
+    }
+  },
+  "calibration_notes": {
+    "status": "NOT_CALIBRATED",
+    "recommendation": "Estos parámetros deben ajustarse usando datos piloto con al menos 30-50 estudiantes y 500+ respuestas por skill.",
+    "methods": [
+      "Expectation-Maximization (EM)",
+      "Grid search con validación cruzada",
+      "Bayesian estimation con MCMC"
+    ],
+    "validation": "Comparar AIC/BIC entre diferentes sets de parámetros y validar predicciones con hold-out set."
+  }
+}

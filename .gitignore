@@ -1,0 +1,36 @@
+# --- Python: Archivos compilados y caché ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Testing y Cobertura ---
+.pytest_cache/
+htmlcov/
+.coverage
+
+# --- MOTOR ADAPTATIVO: Datos Volátiles (CRÍTICO) ---
+# Ignoramos la carpeta runtime para que nadie descargue tus exámenes viejos
+# y para que el proyecto siempre empiece limpio.
+runtime/
+
+# --- Configuración Local y Secretos ---
+.env
+.venv/
+venv/
+env/
+
+# --- Archivos Duplicados o Basura (Vistos en tu imagen) ---
+# Estos archivos de texto sobran porque ya tienes el código .py
+app/engine.txt
+app/main.txt
+Prueba de endpoints.txt
+README copy.md
+
+# --- Logs de errores generales ---
+*.log
+
+# --- IDEs y Sistema Operativo ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

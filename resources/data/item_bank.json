@@ -1,0 +1,5406 @@
+{
+  "bank_id": "bank_derivadas_synthetic_v2",
+  "version": "2.0",
+  "items": [
+    {
+      "item_id": "itm_gen_001",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.735,
+        "b": -1.18,
+        "c": 0.147
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/1",
+        "stem_template": "Pregunta 1 sobre k_regla_potencia (b=-1.18)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_002",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.116,
+        "b": -2.987,
+        "c": 0.027
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/2",
+        "stem_template": "Pregunta 2 sobre k_regla_potencia (b=-2.99)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_003",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.229,
+        "b": -2.049,
+        "c": 0.017
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/3",
+        "stem_template": "Pregunta 3 sobre k_regla_potencia (b=-2.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_004",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.937,
+        "b": 0.956,
+        "c": 0.195
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/4",
+        "stem_template": "Pregunta 4 sobre k_regla_potencia (b=0.96)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_005",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.554,
+        "b": 0.096,
+        "c": 0.179
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/5",
+        "stem_template": "Pregunta 5 sobre k_regla_potencia (b=0.10)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_006",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.368,
+        "b": -2.27,
+        "c": 0.052
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/6",
+        "stem_template": "Pregunta 6 sobre k_regla_potencia (b=-2.27)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_007",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.827,
+        "b": -2.459,
+        "c": 0.116
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/7",
+        "stem_template": "Pregunta 7 sobre k_regla_potencia (b=-2.46)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_008",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.04,
+        "b": 0.593,
+        "c": 0.081
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/8",
+        "stem_template": "Pregunta 8 sobre k_regla_potencia (b=0.59)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_009",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.769,
+        "b": -1.202,
+        "c": 0.196
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/9",
+        "stem_template": "Pregunta 9 sobre k_regla_potencia (b=-1.20)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_010",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.022,
+        "b": 1.202,
+        "c": 0.192
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/10",
+        "stem_template": "Pregunta 10 sobre k_regla_potencia (b=1.20)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_011",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.923,
+        "b": -1.199,
+        "c": 0.017
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/11",
+        "stem_template": "Pregunta 11 sobre k_regla_potencia (b=-1.20)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_012",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.846,
+        "b": -2.57,
+        "c": 0.237
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/12",
+        "stem_template": "Pregunta 12 sobre k_regla_potencia (b=-2.57)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_013",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.801,
+        "b": 1.6,
+        "c": 0.214
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/13",
+        "stem_template": "Pregunta 13 sobre k_regla_potencia (b=1.60)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_014",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.836,
+        "b": 2.853,
+        "c": 0.217
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/14",
+        "stem_template": "Pregunta 14 sobre k_regla_potencia (b=2.85)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_015",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.953,
+        "b": 1.194,
+        "c": 0.046
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/15",
+        "stem_template": "Pregunta 15 sobre k_regla_potencia (b=1.19)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_016",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 0.589,
+        "c": 0.055
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/16",
+        "stem_template": "Pregunta 16 sobre k_regla_potencia (b=0.59)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_017",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.717,
+        "b": 1.95,
+        "c": 0.071
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/17",
+        "stem_template": "Pregunta 17 sobre k_regla_potencia (b=1.95)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_018",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.372,
+        "b": -2.829,
+        "c": 0.226
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/18",
+        "stem_template": "Pregunta 18 sobre k_regla_potencia (b=-2.83)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_019",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.843,
+        "b": 0.734,
+        "c": 0.039
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/19",
+        "stem_template": "Pregunta 19 sobre k_regla_potencia (b=0.73)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_020",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.36,
+        "b": -2.424,
+        "c": 0.198
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/20",
+        "stem_template": "Pregunta 20 sobre k_regla_potencia (b=-2.42)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_021",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.46,
+        "b": -1.165,
+        "c": 0.221
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/21",
+        "stem_template": "Pregunta 21 sobre k_regla_potencia (b=-1.17)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_022",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 0.928,
+        "c": 0.152
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/22",
+        "stem_template": "Pregunta 22 sobre k_regla_potencia (b=0.93)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_023",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 1.55,
+        "c": 0.232
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/23",
+        "stem_template": "Pregunta 23 sobre k_regla_potencia (b=1.55)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_024",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.187,
+        "b": -0.594,
+        "c": 0.01
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/24",
+        "stem_template": "Pregunta 24 sobre k_regla_potencia (b=-0.59)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_025",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.432,
+        "b": 1.557,
+        "c": 0.162
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/25",
+        "stem_template": "Pregunta 25 sobre k_regla_potencia (b=1.56)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_026",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.946,
+        "b": -1.643,
+        "c": 0.064
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/26",
+        "stem_template": "Pregunta 26 sobre k_regla_potencia (b=-1.64)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_027",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.701,
+        "b": 2.478,
+        "c": 0.099
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/27",
+        "stem_template": "Pregunta 27 sobre k_regla_potencia (b=2.48)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_028",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.546,
+        "b": 2.366,
+        "c": 0.09
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/28",
+        "stem_template": "Pregunta 28 sobre k_regla_potencia (b=2.37)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_029",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.365,
+        "b": 2.305,
+        "c": 0.108
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/29",
+        "stem_template": "Pregunta 29 sobre k_regla_potencia (b=2.30)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_030",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.536,
+        "b": -1.097,
+        "c": 0.121
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/30",
+        "stem_template": "Pregunta 30 sobre k_regla_potencia (b=-1.10)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_031",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.815,
+        "b": -2.432,
+        "c": 0.062
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/31",
+        "stem_template": "Pregunta 31 sobre k_regla_potencia (b=-2.43)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_032",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.692,
+        "b": -0.079,
+        "c": 0.001
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/32",
+        "stem_template": "Pregunta 32 sobre k_regla_potencia (b=-0.08)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_033",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.986,
+        "b": 0.07,
+        "c": 0.011
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/33",
+        "stem_template": "Pregunta 33 sobre k_regla_potencia (b=0.07)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_034",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.813,
+        "b": 2.414,
+        "c": 0.232
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/34",
+        "stem_template": "Pregunta 34 sobre k_regla_potencia (b=2.41)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_035",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.255,
+        "b": -2.513,
+        "c": 0.156
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/35",
+        "stem_template": "Pregunta 35 sobre k_regla_potencia (b=-2.51)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_036",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.067,
+        "b": 1.702,
+        "c": 0.192
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/36",
+        "stem_template": "Pregunta 36 sobre k_regla_potencia (b=1.70)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_037",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.876,
+        "b": 2.466,
+        "c": 0.084
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/37",
+        "stem_template": "Pregunta 37 sobre k_regla_potencia (b=2.47)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_038",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.205,
+        "b": 0.608,
+        "c": 0.061
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/38",
+        "stem_template": "Pregunta 38 sobre k_regla_potencia (b=0.61)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_039",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.259,
+        "b": -0.396,
+        "c": 0.08
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/39",
+        "stem_template": "Pregunta 39 sobre k_regla_potencia (b=-0.40)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_040",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.153,
+        "b": -1.317,
+        "c": 0.105
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/40",
+        "stem_template": "Pregunta 40 sobre k_regla_potencia (b=-1.32)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_041",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.675,
+        "b": 2.864,
+        "c": 0.083
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/41",
+        "stem_template": "Pregunta 41 sobre k_regla_potencia (b=2.86)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_042",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.582,
+        "b": 0.311,
+        "c": 0.154
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/42",
+        "stem_template": "Pregunta 42 sobre k_regla_potencia (b=0.31)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_043",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.409,
+        "b": 0.484,
+        "c": 0.169
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/43",
+        "stem_template": "Pregunta 43 sobre k_regla_potencia (b=0.48)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_044",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.971,
+        "b": -2.975,
+        "c": 0.099
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/44",
+        "stem_template": "Pregunta 44 sobre k_regla_potencia (b=-2.97)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_045",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.977,
+        "b": 1.987,
+        "c": 0.105
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/45",
+        "stem_template": "Pregunta 45 sobre k_regla_potencia (b=1.99)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_046",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.004,
+        "b": -1.411,
+        "c": 0.029
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/46",
+        "stem_template": "Pregunta 46 sobre k_regla_potencia (b=-1.41)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_047",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.802,
+        "b": 1.436,
+        "c": 0.22
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/47",
+        "stem_template": "Pregunta 47 sobre k_regla_potencia (b=1.44)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_048",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.009,
+        "b": 0.052,
+        "c": 0.037
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/48",
+        "stem_template": "Pregunta 48 sobre k_regla_potencia (b=0.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_049",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.314,
+        "b": -1.074,
+        "c": 0.21
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/49",
+        "stem_template": "Pregunta 49 sobre k_regla_potencia (b=-1.07)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_050",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.127,
+        "b": 2.522,
+        "c": 0.051
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/50",
+        "stem_template": "Pregunta 50 sobre k_regla_potencia (b=2.52)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_051",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.768,
+        "b": -0.582,
+        "c": 0.029
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/51",
+        "stem_template": "Pregunta 51 sobre k_regla_potencia (b=-0.58)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_052",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.05,
+        "b": 2.822,
+        "c": 0.082
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/52",
+        "stem_template": "Pregunta 52 sobre k_regla_potencia (b=2.82)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_053",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.126,
+        "b": -1.796,
+        "c": 0.187
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/53",
+        "stem_template": "Pregunta 53 sobre k_regla_potencia (b=-1.80)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_054",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.141,
+        "b": -0.203,
+        "c": 0.122
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/54",
+        "stem_template": "Pregunta 54 sobre k_regla_potencia (b=-0.20)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_055",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.124,
+        "b": -0.79,
+        "c": 0.213
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/55",
+        "stem_template": "Pregunta 55 sobre k_regla_potencia (b=-0.79)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_056",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.136,
+        "b": -0.692,
+        "c": 0.21
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/56",
+        "stem_template": "Pregunta 56 sobre k_regla_potencia (b=-0.69)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_057",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.905,
+        "b": -0.12,
+        "c": 0.039
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/57",
+        "stem_template": "Pregunta 57 sobre k_regla_potencia (b=-0.12)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_058",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 1.567,
+        "c": 0.161
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/58",
+        "stem_template": "Pregunta 58 sobre k_regla_potencia (b=1.57)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_059",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.389,
+        "b": -2.186,
+        "c": 0.193
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/59",
+        "stem_template": "Pregunta 59 sobre k_regla_potencia (b=-2.19)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_060",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.469,
+        "b": -2.465,
+        "c": 0.057
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/60",
+        "stem_template": "Pregunta 60 sobre k_regla_potencia (b=-2.46)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_061",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.79,
+        "b": -2.696,
+        "c": 0.145
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/61",
+        "stem_template": "Pregunta 61 sobre k_regla_potencia (b=-2.70)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_062",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.155,
+        "b": 1.906,
+        "c": 0.009
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/62",
+        "stem_template": "Pregunta 62 sobre k_regla_potencia (b=1.91)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_063",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.609,
+        "b": -2.32,
+        "c": 0.234
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/63",
+        "stem_template": "Pregunta 63 sobre k_regla_potencia (b=-2.32)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_064",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.64,
+        "b": 1.48,
+        "c": 0.089
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/64",
+        "stem_template": "Pregunta 64 sobre k_regla_potencia (b=1.48)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_065",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.808,
+        "b": -2.131,
+        "c": 0.216
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/65",
+        "stem_template": "Pregunta 65 sobre k_regla_potencia (b=-2.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_066",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.47,
+        "b": 2.287,
+        "c": 0.198
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/66",
+        "stem_template": "Pregunta 66 sobre k_regla_potencia (b=2.29)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_067",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.006,
+        "b": 2.907,
+        "c": 0.215
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/67",
+        "stem_template": "Pregunta 67 sobre k_regla_potencia (b=2.91)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_068",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.112,
+        "b": -1.118,
+        "c": 0.185
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/68",
+        "stem_template": "Pregunta 68 sobre k_regla_potencia (b=-1.12)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_069",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.938,
+        "b": -0.771,
+        "c": 0.014
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/69",
+        "stem_template": "Pregunta 69 sobre k_regla_potencia (b=-0.77)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_070",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.462,
+        "b": 2.695,
+        "c": 0.249
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/70",
+        "stem_template": "Pregunta 70 sobre k_regla_potencia (b=2.70)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_071",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.964,
+        "b": 1.173,
+        "c": 0.155
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/71",
+        "stem_template": "Pregunta 71 sobre k_regla_potencia (b=1.17)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_072",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.871,
+        "b": -0.65,
+        "c": 0.203
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/72",
+        "stem_template": "Pregunta 72 sobre k_regla_potencia (b=-0.65)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_073",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.879,
+        "b": -1.131,
+        "c": 0.125
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/73",
+        "stem_template": "Pregunta 73 sobre k_regla_potencia (b=-1.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_074",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -2.417,
+        "c": 0.018
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/74",
+        "stem_template": "Pregunta 74 sobre k_regla_potencia (b=-2.42)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_075",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.984,
+        "b": 1.607,
+        "c": 0.069
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/75",
+        "stem_template": "Pregunta 75 sobre k_regla_potencia (b=1.61)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_076",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.891,
+        "b": 2.93,
+        "c": 0.201
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/76",
+        "stem_template": "Pregunta 76 sobre k_regla_potencia (b=2.93)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_077",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.943,
+        "b": -1.649,
+        "c": 0.084
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/77",
+        "stem_template": "Pregunta 77 sobre k_regla_potencia (b=-1.65)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_078",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.656,
+        "b": -2.61,
+        "c": 0.169
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/78",
+        "stem_template": "Pregunta 78 sobre k_regla_potencia (b=-2.61)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_079",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.032,
+        "b": 2.046,
+        "c": 0.006
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/79",
+        "stem_template": "Pregunta 79 sobre k_regla_potencia (b=2.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_080",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.786,
+        "b": -1.594,
+        "c": 0.003
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/80",
+        "stem_template": "Pregunta 80 sobre k_regla_potencia (b=-1.59)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_081",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.354,
+        "b": 1.127,
+        "c": 0.13
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/81",
+        "stem_template": "Pregunta 81 sobre k_regla_potencia (b=1.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_082",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.131,
+        "b": 1.948,
+        "c": 0.203
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/82",
+        "stem_template": "Pregunta 82 sobre k_regla_potencia (b=1.95)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_083",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.795,
+        "b": 0.009,
+        "c": 0.235
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/83",
+        "stem_template": "Pregunta 83 sobre k_regla_potencia (b=0.01)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_084",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.343,
+        "b": -1.546,
+        "c": 0.146
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/84",
+        "stem_template": "Pregunta 84 sobre k_regla_potencia (b=-1.55)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_085",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.705,
+        "b": 1.153,
+        "c": 0.059
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/85",
+        "stem_template": "Pregunta 85 sobre k_regla_potencia (b=1.15)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_086",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.495,
+        "b": -0.548,
+        "c": 0.016
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/86",
+        "stem_template": "Pregunta 86 sobre k_regla_potencia (b=-0.55)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_087",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.711,
+        "b": -1.382,
+        "c": 0.068
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/87",
+        "stem_template": "Pregunta 87 sobre k_regla_potencia (b=-1.38)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_088",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.535,
+        "b": 1.758,
+        "c": 0.196
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/88",
+        "stem_template": "Pregunta 88 sobre k_regla_potencia (b=1.76)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_089",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.979,
+        "b": -1.681,
+        "c": 0.229
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/89",
+        "stem_template": "Pregunta 89 sobre k_regla_potencia (b=-1.68)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_090",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.325,
+        "b": 2.058,
+        "c": 0.124
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/90",
+        "stem_template": "Pregunta 90 sobre k_regla_potencia (b=2.06)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_091",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.144,
+        "b": 2.066,
+        "c": 0.147
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/91",
+        "stem_template": "Pregunta 91 sobre k_regla_potencia (b=2.07)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_092",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.849,
+        "b": -0.192,
+        "c": 0.085
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/92",
+        "stem_template": "Pregunta 92 sobre k_regla_potencia (b=-0.19)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_093",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.921,
+        "b": -1.372,
+        "c": 0.174
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/93",
+        "stem_template": "Pregunta 93 sobre k_regla_potencia (b=-1.37)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_094",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.703,
+        "b": 2.011,
+        "c": 0.034
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/94",
+        "stem_template": "Pregunta 94 sobre k_regla_potencia (b=2.01)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_095",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.034,
+        "b": -1.914,
+        "c": 0.014
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/95",
+        "stem_template": "Pregunta 95 sobre k_regla_potencia (b=-1.91)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_096",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.134,
+        "b": 0.424,
+        "c": 0.142
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/96",
+        "stem_template": "Pregunta 96 sobre k_regla_potencia (b=0.42)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_097",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.604,
+        "b": 1.445,
+        "c": 0.019
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/97",
+        "stem_template": "Pregunta 97 sobre k_regla_potencia (b=1.44)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_098",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.368,
+        "b": -1.328,
+        "c": 0.034
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/98",
+        "stem_template": "Pregunta 98 sobre k_regla_potencia (b=-1.33)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_099",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.381,
+        "b": -1.31,
+        "c": 0.246
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/99",
+        "stem_template": "Pregunta 99 sobre k_regla_potencia (b=-1.31)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_100",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_potencia"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.636,
+        "b": -2.439,
+        "c": 0.232
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/100",
+        "stem_template": "Pregunta 100 sobre k_regla_potencia (b=-2.44)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_potencia_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_101",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.824,
+        "b": 2.824,
+        "c": 0.093
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/101",
+        "stem_template": "Pregunta 101 sobre k_regla_cadena (b=2.82)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_102",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -0.391,
+        "c": 0.047
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/102",
+        "stem_template": "Pregunta 102 sobre k_regla_cadena (b=-0.39)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_103",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.881,
+        "b": -1.651,
+        "c": 0.033
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/103",
+        "stem_template": "Pregunta 103 sobre k_regla_cadena (b=-1.65)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_104",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.357,
+        "b": -1.432,
+        "c": 0.077
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/104",
+        "stem_template": "Pregunta 104 sobre k_regla_cadena (b=-1.43)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_105",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.985,
+        "b": -0.793,
+        "c": 0.173
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/105",
+        "stem_template": "Pregunta 105 sobre k_regla_cadena (b=-0.79)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_106",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.791,
+        "b": 0.574,
+        "c": 0.025
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/106",
+        "stem_template": "Pregunta 106 sobre k_regla_cadena (b=0.57)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_107",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.052,
+        "b": -0.577,
+        "c": 0.214
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/107",
+        "stem_template": "Pregunta 107 sobre k_regla_cadena (b=-0.58)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_108",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.002,
+        "b": -1.452,
+        "c": 0.25
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/108",
+        "stem_template": "Pregunta 108 sobre k_regla_cadena (b=-1.45)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_109",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.174,
+        "b": -2.804,
+        "c": 0.106
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/109",
+        "stem_template": "Pregunta 109 sobre k_regla_cadena (b=-2.80)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_110",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.668,
+        "b": -2.419,
+        "c": 0.139
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/110",
+        "stem_template": "Pregunta 110 sobre k_regla_cadena (b=-2.42)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_111",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.121,
+        "b": -1.444,
+        "c": 0.044
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/111",
+        "stem_template": "Pregunta 111 sobre k_regla_cadena (b=-1.44)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_112",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.217,
+        "b": -2.57,
+        "c": 0.132
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/112",
+        "stem_template": "Pregunta 112 sobre k_regla_cadena (b=-2.57)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_113",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -1.629,
+        "c": 0.137
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/113",
+        "stem_template": "Pregunta 113 sobre k_regla_cadena (b=-1.63)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_114",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.391,
+        "b": -1.156,
+        "c": 0.063
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/114",
+        "stem_template": "Pregunta 114 sobre k_regla_cadena (b=-1.16)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_115",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.856,
+        "b": 1.184,
+        "c": 0.093
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/115",
+        "stem_template": "Pregunta 115 sobre k_regla_cadena (b=1.18)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_116",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.544,
+        "b": 1.827,
+        "c": 0.178
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/116",
+        "stem_template": "Pregunta 116 sobre k_regla_cadena (b=1.83)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_117",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.474,
+        "b": 0.133,
+        "c": 0.01
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/117",
+        "stem_template": "Pregunta 117 sobre k_regla_cadena (b=0.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_118",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.198,
+        "b": -2.852,
+        "c": 0.136
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/118",
+        "stem_template": "Pregunta 118 sobre k_regla_cadena (b=-2.85)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_119",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.724,
+        "b": -2.237,
+        "c": 0.201
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/119",
+        "stem_template": "Pregunta 119 sobre k_regla_cadena (b=-2.24)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_120",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.665,
+        "b": -2.981,
+        "c": 0.182
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/120",
+        "stem_template": "Pregunta 120 sobre k_regla_cadena (b=-2.98)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_121",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.795,
+        "b": 0.293,
+        "c": 0.119
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/121",
+        "stem_template": "Pregunta 121 sobre k_regla_cadena (b=0.29)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_122",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.076,
+        "b": 1.265,
+        "c": 0.197
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/122",
+        "stem_template": "Pregunta 122 sobre k_regla_cadena (b=1.27)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_123",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.402,
+        "b": -2.769,
+        "c": 0.104
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/123",
+        "stem_template": "Pregunta 123 sobre k_regla_cadena (b=-2.77)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_124",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -1.238,
+        "c": 0.002
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/124",
+        "stem_template": "Pregunta 124 sobre k_regla_cadena (b=-1.24)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_125",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.367,
+        "b": 0.134,
+        "c": 0.214
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/125",
+        "stem_template": "Pregunta 125 sobre k_regla_cadena (b=0.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_126",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.772,
+        "b": 1.065,
+        "c": 0.242
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/126",
+        "stem_template": "Pregunta 126 sobre k_regla_cadena (b=1.06)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_127",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.935,
+        "b": -1.264,
+        "c": 0.233
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/127",
+        "stem_template": "Pregunta 127 sobre k_regla_cadena (b=-1.26)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_128",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.997,
+        "b": -0.084,
+        "c": 0.013
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/128",
+        "stem_template": "Pregunta 128 sobre k_regla_cadena (b=-0.08)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_129",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.28,
+        "b": 0.065,
+        "c": 0.083
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/129",
+        "stem_template": "Pregunta 129 sobre k_regla_cadena (b=0.07)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_130",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.183,
+        "b": 0.951,
+        "c": 0.017
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/130",
+        "stem_template": "Pregunta 130 sobre k_regla_cadena (b=0.95)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_131",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.992,
+        "b": -2.885,
+        "c": 0.235
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/131",
+        "stem_template": "Pregunta 131 sobre k_regla_cadena (b=-2.88)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_132",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.563,
+        "b": 0.863,
+        "c": 0.106
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/132",
+        "stem_template": "Pregunta 132 sobre k_regla_cadena (b=0.86)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_133",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.059,
+        "b": 1.54,
+        "c": 0.06
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/133",
+        "stem_template": "Pregunta 133 sobre k_regla_cadena (b=1.54)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_134",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.753,
+        "b": -0.048,
+        "c": 0.223
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/134",
+        "stem_template": "Pregunta 134 sobre k_regla_cadena (b=-0.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_135",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.016,
+        "b": -2.291,
+        "c": 0.033
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/135",
+        "stem_template": "Pregunta 135 sobre k_regla_cadena (b=-2.29)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_136",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.54,
+        "b": 2.736,
+        "c": 0.104
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/136",
+        "stem_template": "Pregunta 136 sobre k_regla_cadena (b=2.74)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_137",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.811,
+        "b": -2.861,
+        "c": 0.075
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/137",
+        "stem_template": "Pregunta 137 sobre k_regla_cadena (b=-2.86)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_138",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.145,
+        "b": 0.199,
+        "c": 0.119
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/138",
+        "stem_template": "Pregunta 138 sobre k_regla_cadena (b=0.20)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_139",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.722,
+        "b": 2.215,
+        "c": 0.07
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/139",
+        "stem_template": "Pregunta 139 sobre k_regla_cadena (b=2.22)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_140",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.216,
+        "b": 1.493,
+        "c": 0.04
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/140",
+        "stem_template": "Pregunta 140 sobre k_regla_cadena (b=1.49)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_141",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.957,
+        "b": 2.772,
+        "c": 0.234
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/141",
+        "stem_template": "Pregunta 141 sobre k_regla_cadena (b=2.77)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_142",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.226,
+        "b": -2.699,
+        "c": 0.082
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/142",
+        "stem_template": "Pregunta 142 sobre k_regla_cadena (b=-2.70)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_143",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.42,
+        "b": 0.148,
+        "c": 0.148
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/143",
+        "stem_template": "Pregunta 143 sobre k_regla_cadena (b=0.15)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_144",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.657,
+        "b": -2.985,
+        "c": 0.154
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/144",
+        "stem_template": "Pregunta 144 sobre k_regla_cadena (b=-2.98)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_145",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.233,
+        "b": -0.671,
+        "c": 0.157
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/145",
+        "stem_template": "Pregunta 145 sobre k_regla_cadena (b=-0.67)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_146",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.042,
+        "b": -0.16,
+        "c": 0.03
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/146",
+        "stem_template": "Pregunta 146 sobre k_regla_cadena (b=-0.16)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_147",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.46,
+        "b": -0.705,
+        "c": 0.014
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/147",
+        "stem_template": "Pregunta 147 sobre k_regla_cadena (b=-0.71)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_148",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.315,
+        "b": 2.05,
+        "c": 0.124
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/148",
+        "stem_template": "Pregunta 148 sobre k_regla_cadena (b=2.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_149",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.942,
+        "b": 1.883,
+        "c": 0.167
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/149",
+        "stem_template": "Pregunta 149 sobre k_regla_cadena (b=1.88)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_150",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.827,
+        "b": 1.417,
+        "c": 0.224
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/150",
+        "stem_template": "Pregunta 150 sobre k_regla_cadena (b=1.42)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_151",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.615,
+        "b": -0.455,
+        "c": 0.193
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/151",
+        "stem_template": "Pregunta 151 sobre k_regla_cadena (b=-0.45)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_152",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.473,
+        "b": 0.815,
+        "c": 0.031
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/152",
+        "stem_template": "Pregunta 152 sobre k_regla_cadena (b=0.81)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_153",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.022,
+        "b": -1.685,
+        "c": 0.245
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/153",
+        "stem_template": "Pregunta 153 sobre k_regla_cadena (b=-1.68)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_154",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 1.692,
+        "c": 0.243
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/154",
+        "stem_template": "Pregunta 154 sobre k_regla_cadena (b=1.69)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_155",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.963,
+        "b": 0.225,
+        "c": 0.182
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/155",
+        "stem_template": "Pregunta 155 sobre k_regla_cadena (b=0.23)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_156",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.156,
+        "b": -1.479,
+        "c": 0.077
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/156",
+        "stem_template": "Pregunta 156 sobre k_regla_cadena (b=-1.48)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_157",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.922,
+        "b": 2.329,
+        "c": 0.195
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/157",
+        "stem_template": "Pregunta 157 sobre k_regla_cadena (b=2.33)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_158",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": 2.22,
+        "c": 0.06
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/158",
+        "stem_template": "Pregunta 158 sobre k_regla_cadena (b=2.22)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_159",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.709,
+        "b": 2.902,
+        "c": 0.045
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/159",
+        "stem_template": "Pregunta 159 sobre k_regla_cadena (b=2.90)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_160",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.031,
+        "b": 2.123,
+        "c": 0.241
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/160",
+        "stem_template": "Pregunta 160 sobre k_regla_cadena (b=2.12)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_161",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.352,
+        "b": -0.97,
+        "c": 0.141
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/161",
+        "stem_template": "Pregunta 161 sobre k_regla_cadena (b=-0.97)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_162",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.302,
+        "b": -1.371,
+        "c": 0.142
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/162",
+        "stem_template": "Pregunta 162 sobre k_regla_cadena (b=-1.37)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_163",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.436,
+        "b": 0.64,
+        "c": 0.128
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/163",
+        "stem_template": "Pregunta 163 sobre k_regla_cadena (b=0.64)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_164",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.239,
+        "b": -2.131,
+        "c": 0.147
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/164",
+        "stem_template": "Pregunta 164 sobre k_regla_cadena (b=-2.13)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_165",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.927,
+        "b": -0.631,
+        "c": 0.048
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/165",
+        "stem_template": "Pregunta 165 sobre k_regla_cadena (b=-0.63)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_166",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -1.145,
+        "c": 0.153
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/166",
+        "stem_template": "Pregunta 166 sobre k_regla_cadena (b=-1.14)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_167",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.372,
+        "b": 2.967,
+        "c": 0.205
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/167",
+        "stem_template": "Pregunta 167 sobre k_regla_cadena (b=2.97)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_168",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.102,
+        "b": 1.472,
+        "c": 0.169
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/168",
+        "stem_template": "Pregunta 168 sobre k_regla_cadena (b=1.47)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_169",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.74,
+        "b": -2.764,
+        "c": 0.139
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/169",
+        "stem_template": "Pregunta 169 sobre k_regla_cadena (b=-2.76)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_170",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.358,
+        "b": -1.31,
+        "c": 0.247
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/170",
+        "stem_template": "Pregunta 170 sobre k_regla_cadena (b=-1.31)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_171",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.238,
+        "b": -0.655,
+        "c": 0.009
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/171",
+        "stem_template": "Pregunta 171 sobre k_regla_cadena (b=-0.66)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_172",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.624,
+        "b": 2.684,
+        "c": 0.153
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/172",
+        "stem_template": "Pregunta 172 sobre k_regla_cadena (b=2.68)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_173",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.356,
+        "b": 0.167,
+        "c": 0.062
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/173",
+        "stem_template": "Pregunta 173 sobre k_regla_cadena (b=0.17)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_174",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.284,
+        "b": 1.263,
+        "c": 0.093
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/174",
+        "stem_template": "Pregunta 174 sobre k_regla_cadena (b=1.26)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_175",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.132,
+        "b": 1.005,
+        "c": 0.177
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/175",
+        "stem_template": "Pregunta 175 sobre k_regla_cadena (b=1.01)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_176",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.396,
+        "b": 1.774,
+        "c": 0.187
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/176",
+        "stem_template": "Pregunta 176 sobre k_regla_cadena (b=1.77)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_177",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.244,
+        "b": -0.391,
+        "c": 0.062
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/177",
+        "stem_template": "Pregunta 177 sobre k_regla_cadena (b=-0.39)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_178",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.945,
+        "b": 0.302,
+        "c": 0.175
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/178",
+        "stem_template": "Pregunta 178 sobre k_regla_cadena (b=0.30)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_179",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.27,
+        "b": -2.168,
+        "c": 0.09
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/179",
+        "stem_template": "Pregunta 179 sobre k_regla_cadena (b=-2.17)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_180",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.408,
+        "b": -0.052,
+        "c": 0.099
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/180",
+        "stem_template": "Pregunta 180 sobre k_regla_cadena (b=-0.05)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_181",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.869,
+        "b": -0.515,
+        "c": 0.12
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/181",
+        "stem_template": "Pregunta 181 sobre k_regla_cadena (b=-0.51)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_182",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.87,
+        "b": 2.412,
+        "c": 0.077
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/182",
+        "stem_template": "Pregunta 182 sobre k_regla_cadena (b=2.41)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_183",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.432,
+        "b": 1.857,
+        "c": 0.217
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/183",
+        "stem_template": "Pregunta 183 sobre k_regla_cadena (b=1.86)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_184",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.628,
+        "b": -1.149,
+        "c": 0.138
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/184",
+        "stem_template": "Pregunta 184 sobre k_regla_cadena (b=-1.15)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_185",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.771,
+        "b": -2.747,
+        "c": 0.022
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/185",
+        "stem_template": "Pregunta 185 sobre k_regla_cadena (b=-2.75)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_186",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.746,
+        "b": 1.609,
+        "c": 0.011
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/186",
+        "stem_template": "Pregunta 186 sobre k_regla_cadena (b=1.61)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_187",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.701,
+        "b": -0.62,
+        "c": 0.124
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/187",
+        "stem_template": "Pregunta 187 sobre k_regla_cadena (b=-0.62)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_188",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.76,
+        "b": 1.947,
+        "c": 0.156
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/188",
+        "stem_template": "Pregunta 188 sobre k_regla_cadena (b=1.95)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_189",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.5,
+        "b": -0.408,
+        "c": 0.246
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/189",
+        "stem_template": "Pregunta 189 sobre k_regla_cadena (b=-0.41)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_190",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.348,
+        "b": -1.784,
+        "c": 0.121
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/190",
+        "stem_template": "Pregunta 190 sobre k_regla_cadena (b=-1.78)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_191",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.984,
+        "b": -1.611,
+        "c": 0.196
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/191",
+        "stem_template": "Pregunta 191 sobre k_regla_cadena (b=-1.61)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_192",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.5,
+        "b": -0.038,
+        "c": 0.173
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/192",
+        "stem_template": "Pregunta 192 sobre k_regla_cadena (b=-0.04)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_193",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "dificil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.014,
+        "b": 1.676,
+        "c": 0.223
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/193",
+        "stem_template": "Pregunta 193 sobre k_regla_cadena (b=1.68)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_dificil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_194",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.008,
+        "b": -2.375,
+        "c": 0.13
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/194",
+        "stem_template": "Pregunta 194 sobre k_regla_cadena (b=-2.38)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_195",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 0.958,
+        "b": -2.986,
+        "c": 0.126
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/195",
+        "stem_template": "Pregunta 195 sobre k_regla_cadena (b=-2.99)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_196",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.191,
+        "b": -0.794,
+        "c": 0.242
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/196",
+        "stem_template": "Pregunta 196 sobre k_regla_cadena (b=-0.79)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_197",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.088,
+        "b": -1.026,
+        "c": 0.233
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/197",
+        "stem_template": "Pregunta 197 sobre k_regla_cadena (b=-1.03)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_198",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 2.255,
+        "b": -0.298,
+        "c": 0.049
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/198",
+        "stem_template": "Pregunta 198 sobre k_regla_cadena (b=-0.30)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_199",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "media",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.225,
+        "b": -0.432,
+        "c": 0.072
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/199",
+        "stem_template": "Pregunta 199 sobre k_regla_cadena (b=-0.43)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_media",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    },
+    {
+      "item_id": "itm_gen_200",
+      "topic_id": "t_derivadas",
+      "skill_ids": [
+        "k_regla_cadena"
+      ],
+      "difficulty_label": "facil",
+      "format": "mcq",
+      "irt": {
+        "model": "3PL",
+        "a": 1.841,
+        "b": -2.315,
+        "c": 0.246
+      },
+      "content": {
+        "prompt_ref": "derivadas/gen/200",
+        "stem_template": "Pregunta 200 sobre k_regla_cadena (b=-2.31)",
+        "choices_ref": "placeholder"
+      },
+      "constraints": {
+        "exposure_group": "gen_k_regla_cadena_facil",
+        "time_limit_ms": 60000
+      },
+      "analytics": {
+        "exposure_count": 0
+      }
+    }
+  ]
+}

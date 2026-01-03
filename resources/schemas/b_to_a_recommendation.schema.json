@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tesis.local/schemas/b_to_a_recommendation.schema.json",
+  "title": "B->A Recommendation",
+  "description": "Contrato de recomendación enviada desde Componente B (motor adaptativo) al Componente A (generador) con el siguiente ítem a presentar y tipo de apoyo.",
+  "type": "object",
+  "required": [
+    "event_type",
+    "event_version",
+    "student",
+    "context",
+    "recommendation",
+    "state",
+    "explain"
+  ],
+  "properties": {
+    "event_type": {
+      "const": "recommendation",
+      "description": "Tipo de evento, siempre 'recommendation'"
+    },
+    "event_version": {
+      "type": "string",
+      "description": "Versión del formato de recomendación"
+    },
+    "student": {
+      "type": "object",
+      "required": [
+        "student_id",
+        "session_id"
+      ],
+      "properties": {
+        "student_id": {
+          "type": "string",
+          "description": "ID del estudiante"
+        },
+        "session_id": {
+          "type": "string",
+          "description": "ID de la sesión"
+        }
+      },
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "topic_id",
+        "skill_ids",
+        "mode"
+      ],
+      "properties": {
+        "topic_id": {
+          "type": "string",
+          "description": "ID del tema"
+        },
+        "skill_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "description": "Skills objetivo"
+        },
+        "language": {
+          "type": "string",
+          "description": "Idioma"
+        },
+        "mode": {
+          "enum": [
+            "diagnostic",
+            "practice",
+            "exam"
+          ],
+          "description": "Modo"
+        }
+      },
+      "additionalProperties": true
+    },
+    "recommendation": {
+      "type": "object",
+      "required": [
+        "action",
+        "item_id",
+        "target_difficulty",
+        "support_type"
+      ],
+      "properties": {
+        "action": {
+          "enum": [
+            "present_item",
+            "present_explanation",
+            "present_practice_set",
+            "end_session"
+          ],
+          "description": "Acción recomendada"
+        },
+        "item_id": {
+          "type": "string",
+          "description": "ID del ítem a presentar"
+        },
+        "target_difficulty": {
+          "enum": [
+            "facil",
+            "media",
+            "dificil"
+          ],
+          "description": "Dificultad target"
+        },
+        "support_type": {
+          "enum": [
+            "no_hint",
+            "hint",
+            "worked_example"
+          ],
+          "description": "Tipo de apoyo pedagógico"
+        },
+        "present_item": {
+          "type": "boolean",
+          "description": "Si debe presentarse el ítem (false cuando action=end_session)"
+        },
+        "stop_reason": {
+          "type": "string",
+          "description": "Razón de parada si action=end_session"
+        }
+      },
+      "additionalProperties": true
+    },
+    "state": {
+      "type": "object",
+      "required": [
+        "theta_hat",
+        "se_theta",
+        "mastery"
+      ],
+      "properties": {
+        "theta_hat": {
+          "type": "number",
+          "description": "Estimación actual de habilidad θ (IRT)"
+        },
+        "se_theta": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Error estándar de θ̂"
+        },
+        "mastery": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "description": "Probabilidad de dominio por skill (BKT)"
+        }
+      },
+      "additionalProperties": true
+    },
+    "explain": {
+      "type": "object",
+      "required": [
+        "policy_used",
+        "reason",
+        "timestamp"
+      ],
+      "properties": {
+        "policy_used": {
+          "type": "string",
+          "description": "ID de política usada"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Razón de la decisión (ej: IRT:max_fisher_information)"
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Timestamp de la recomendación"
+        }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "description": "Métricas avanzadas de desempeño (opcional pero incluido por defecto)",
+      "properties": {
+        "precision": {
+          "type": "object",
+          "description": "Métricas de precisión de estimación"
+        },
+        "eficiencia": {
+          "type": "object",
+          "description": "Métricas de eficiencia temporal"
+        },
+        "progreso_dominio": {
+          "type": "object",
+          "description": "Métricas de progreso y dominio de skills"
+        },
+        "calidad_predictiva": {
+          "type": "object",
+          "description": "Métricas de calidad del modelo"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

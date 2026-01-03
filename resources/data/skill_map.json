@@ -1,0 +1,55 @@
+{
+  "taxonomy_version": "1.0",
+  "comment": "Taxonomía de habilidades matemáticas - Derivadas",
+  "topics": [
+    {
+      "topic_id": "t_derivadas",
+      "name": "Derivadas",
+      "description": "Cálculo diferencial - Conceptos básicos y reglas fundamentales",
+      "skills": [
+        {
+          "skill_id": "k_regla_potencia",
+          "name": "Regla de la potencia",
+          "description": "Aplicar d/dx[x^n] = n*x^(n-1)",
+          "prerequisites": [],
+          "bloom_level": "Aplicación",
+          "difficulty_estimate": "Fácil a Media"
+        },
+        {
+          "skill_id": "k_regla_cadena",
+          "name": "Regla de la cadena",
+          "description": "Aplicar d/dx[f(g(x))] = f'(g(x)) * g'(x)",
+          "prerequisites": [
+            "k_regla_potencia"
+          ],
+          "bloom_level": "Aplicación-Análisis",
+          "difficulty_estimate": "Media a Difícil"
+        }
+      ]
+    }
+  ],
+  "future_expansion": {
+    "planned_skills": [
+      {
+        "skill_id": "k_regla_producto",
+        "name": "Regla del producto",
+        "prerequisites": ["k_regla_potencia"]
+      },
+      {
+        "skill_id": "k_regla_cociente",
+        "name": "Regla del cociente",
+        "prerequisites": ["k_regla_producto"]
+      },
+      {
+        "skill_id": "k_derivadas_trigonometricas",
+        "name": "Derivadas de funciones trigonométricas",
+        "prerequisites": ["k_regla_potencia"]
+      },
+      {
+        "skill_id": "k_derivadas_exponenciales",
+        "name": "Derivadas de funciones exponenciales",
+        "prerequisites": ["k_regla_potencia"]
+      }
+    ]
+  }
+}
