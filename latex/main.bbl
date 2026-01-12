@@ -498,8 +498,8 @@
       \strng{authornamehash}{700639024092fdcbf964f850db4589cf}
       \strng{authorfullhash}{700639024092fdcbf964f850db4589cf}
       \strng{authorfullhashraw}{700639024092fdcbf964f850db4589cf}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista Tecnología, Investigación y Academia (TIA)}
@@ -531,8 +531,8 @@
       \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
       \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
       \strng{authorfullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Versión 2020. Licencia Creative Commons Attribution Share-Alike 4.0}
@@ -544,72 +544,6 @@
       \verb{url}
       \verb https://scrumguides.org
       \endverb
-    \endentry
-    \entry{ref13}{thesis}{}{}
-      \name{author}{1}{}{%
-        {{hash=632df4bdf2194c831f93be0672616725}{%
-           family={Vargas\bibnamedelima Peña},
-           familyi={V\bibinitperiod\bibinitdelim P\bibinitperiod},
-           given={Luis},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Universidad Rey Juan Carlos}%
-      }
-      \list{location}{1}{%
-        {Madrid, España}%
-      }
-      \strng{namehash}{632df4bdf2194c831f93be0672616725}
-      \strng{fullhash}{632df4bdf2194c831f93be0672616725}
-      \strng{fullhashraw}{632df4bdf2194c831f93be0672616725}
-      \strng{bibnamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorbibnamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authornamehash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorfullhash}{632df4bdf2194c831f93be0672616725}
-      \strng{authorfullhashraw}{632df4bdf2194c831f93be0672616725}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Estudio comparativo de modelos adaptativos y análisis de su uso en un ambiente de m-Learning implementando la técnica adaptativa de la Teoría de Respuesta al Ítem (IRT)}
-      \field{type}{mathesis}
-      \field{year}{2012}
-      \true{nocite}
-    \endentry
-    \entry{ref16}{thesis}{}{}
-      \name{author}{2}{}{%
-        {{hash=5e267e565bbf2cdf6682b0a21a2ff868}{%
-           family={Sarango},
-           familyi={S\bibinitperiod},
-           given={José\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=fe957075ba36fa0bf4e33cd9c7782ce1}{%
-           family={Villamar},
-           familyi={V\bibinitperiod},
-           given={Mauricio},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Escuela Superior Politécnica del Litoral}%
-      }
-      \list{location}{1}{%
-        {Ecuador}%
-      }
-      \strng{namehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{fullhash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{fullhashraw}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{bibnamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{authorbibnamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{authornamehash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{authorfullhash}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \strng{authorfullhashraw}{a9a4813ffbe3fee9bf8a78bd20913c8b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Aplicación de metodologías de desarrollo de software en proyectos de ingeniería}
-      \field{year}{2022}
-      \true{nocite}
     \endentry
   \enddatalist
 \endrefsection

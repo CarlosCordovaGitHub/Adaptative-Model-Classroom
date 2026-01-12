@@ -228,26 +228,185 @@ Las variables independientes corresponden a los parámetros psicométricos y com
 La habilidad latente constituye la variable independiente principal del estudio. Representa el nivel verdadero de conocimiento del estudiante en el dominio evaluado, expresado en la escala logit de la Teoría de Respuesta al Ítem. Esta variable fue operacionalizada mediante valores numéricos reales distribuidos uniformemente en el rango θ ∈ [-2.0, +2.0], donde valores negativos representan estudiantes con conocimientos insuficientes, valores cercanos a cero corresponden a estudiantes de nivel medio, y valores positivos indican dominio avanzado del contenido \cite{ref4,ref5}.
 La distribución uniforme de los valores de θ asignados a los estudiantes virtuales permite evaluar el comportamiento del sistema adaptativo en todo el espectro de habilidad relevante, evitando sesgos hacia estudiantes de un nivel específico y facilitando el análisis de equidad diagnóstica.
 \subsubsection{Parámetros IRT del ítem}
+Los ítems administrados durante las sesiones de evaluación se caracterizaron mediante el modelo logístico de tres parámetros (3PL) de la Teoría de Respuesta al Ítem, que incluye:
+\begin{itemize}
+    \item \textbf{Parámetro de discriminación ($a$):} 
+    Representa la capacidad del ítem para diferenciar entre estudiantes con distintos niveles de habilidad. 
+    Este parámetro fue operacionalizado mediante valores numéricos reales en el rango 
+    $a \in [0.5, 2.5]$, donde valores más elevados indican una mayor capacidad discriminativa del ítem. 
+    La distribución del parámetro siguió una distribución log-normal con media $\mu = 0.3$ y desviación estándar 
+    $\sigma = 0.4$, truncada en los límites especificados, conforme a lo reportado en la literatura especializada \cite{ref4}.
+
+    \item \textbf{Parámetro de dificultad ($b$):} 
+    Representa el nivel de habilidad para el cual la probabilidad de responder correctamente un ítem es del $50\%$, 
+    asumiendo $c = 0$. 
+    Este parámetro fue operacionalizado mediante valores numéricos reales en el rango 
+    $b \in [-3.0, +3.0]$, distribuidos de forma uniforme con el propósito de garantizar la disponibilidad de ítems 
+    de baja, media y alta dificultad a lo largo del continuo de habilidad \cite{ref4,ref5}.
+
+    \item \textbf{Parámetro de adivinanza ($c$):} 
+    Representa la probabilidad de que un estudiante responda correctamente un ítem por azar, generalmente asociada 
+    a ítems de opción múltiple. 
+    Este parámetro fue operacionalizado mediante valores numéricos reales en el rango 
+    $c \in [0.0, 0.25]$, distribuidos de manera uniforme, de acuerdo con recomendaciones psicométricas previas \cite{ref4}.
+\end{itemize}
+
 \subsubsection{Consistencia de respuesta}
+Esta variable modela el grado de coherencia del estudiante al responder de acuerdo con su nivel real de habilidad. Representa la probabilidad de que el estudiante responda de forma predecible según el modelo IRT, en lugar de cometer errores aleatorios o responder de manera inconsistente debido a factores externos (distracción, fatiga momentánea, etc.). Fue operacionalizada mediante valores numéricos reales en el rango [0.80, 0.95], distribuidos uniformemente entre los perfiles de estudiantes virtuales.
+Valores cercanos a 1.0 representan estudiantes altamente consistentes cuyo comportamiento se ajusta estrechamente al modelo teórico, mientras que valores menores introducen un componente estocástico que refleja la variabilidad natural observada en respuestas reales \cite{ref9,ref11}.
+
 \subsubsection{Tasa de aprendizaje (learning rate)}
+Esta variable modela la capacidad del estudiante para adquirir conocimiento de forma incremental durante la sesión de evaluación, reflejando el efecto de práctica y consolidación que puede ocurrir al interactuar con los ítems. Fue operacionalizada mediante valores numéricos reales en el rango [0.10, 0.20], distribuidos uniformemente.
+Un valor de 0.15, por ejemplo, indica que en cada interacción el estudiante tiene una probabilidad del 15\% de mejorar su dominio en las habilidades relacionadas con el ítem respondido. Esta variable permite simular escenarios más realistas donde el estudiante no permanece estático, sino que puede mejorar progresivamente durante la evaluación \cite{ref9,ref11}.
+
 \subsubsection{Factor de fatiga}
+La variable modeliza el incremento paulatino del estudiante en el tiempo de respuesta a causa de la fatiga cognitiva acumulada durante la sesión propia de las tareas. Se implementó con valores reales en el intervalo [0.01,0.03] por ítem gestionado, distribuidos uniformemente. Un factor de fatiga de 0.02 por ejemplo, implica que el tiempo de respuesta incrementa un 2\% por cada ítem que se da respuesta, de forma que se refleja la degradación progresiva del rendimiento vinculada a las sesiones de evaluación más dilatadas.
+
 \subsection{Variables dependientes}
+Las variables dependientes corresponden a las salidas generadas por el Sistema de Evaluación Adaptativa durante el procesamiento de las respuestas de los estudiantes virtuales. Estas variables constituyen los objetos de medición principales del estudio y permiten evaluar la precisión, eficiencia y calidad del motor adaptativo.
 \subsubsection{Habilidad estimada ($\hat{\theta}$)
 }
+La habilidad estimada ($\hat{\theta}$) representa la estimación de la habilidad latente del estudiante generada por el algoritmo de estimación a posteriori esperada (EAP) del motor adaptativo. 
+Esta variable fue operacionalizada mediante valores numéricos reales en la escala logit, típicamente en el intervalo 
+$\hat{\theta} \in [-4.0, +4.0]$, si bien los valores observados tienden a concentrarse en el rango 
+$[-3.0, +3.0]$ una vez administrado un número suficiente de ítems \cite{ref4,ref5}.
+
+La diferencia entre la habilidad estimada ($\hat{\theta}$) y el valor verdadero de la habilidad latente ($\theta$) 
+constituye el error de estimación, el cual se considera una métrica fundamental para la evaluación de la precisión 
+diagnóstica del sistema.
+
 \subsubsection{Error estándar de la estimación ($SE(\theta)$)
 }
+El error estándar de la estimación ($SE(\hat{\theta})$) representa el nivel de incertidumbre asociado a la estimación de la habilidad latente del estudiante, y se calcula como la raíz cuadrada de la varianza a posteriori de la habilidad estimada. 
+Esta variable fue operacionalizada mediante valores numéricos reales positivos, típicamente en el intervalo 
+$SE(\hat{\theta}) \in [0.2, 1.0]$ \cite{ref4,ref5}.
+
+Valores menores de $SE(\hat{\theta})$ indican estimaciones más precisas y confiables. 
+El objetivo del sistema adaptativo consiste en reducir progresivamente este valor mediante la administración de ítems informativos, alcanzando idealmente un umbral de 
+$SE(\hat{\theta}) \leq 0.4$, el cual es considerado aceptable en evaluaciones adaptativas de alta precisión \cite{ref4}.
+
 \subsubsection{Error de estimación absoluto ($|\theta - \hat{\theta}|$)
 }
+El error de estimación absoluto ($|\theta - \hat{\theta}|$) representa la magnitud de la diferencia entre la habilidad latente real del estudiante y la habilidad estimada por el sistema. 
+Esta variable fue operacionalizada mediante valores numéricos reales no negativos, típicamente en el intervalo 
+$[0.0, 2.0]$.
+
+Esta métrica constituye un indicador directo de la exactitud del sistema y es empleada para el cálculo de métricas agregadas, tales como el error cuadrático medio (RMSE) y el error absoluto medio (MAE) \cite{ref4,ref5}.
+
 \subsubsection{Probabilidad de dominio por habilidad ($p_{\text{mastery}}$)
 }
+La probabilidad de dominio por habilidad ($p_{\text{mastery}}$) representa la estimación bayesiana de la probabilidad de que un estudiante haya alcanzado el dominio de una habilidad específica (\textit{skill}), calculada mediante el modelo de rastreo de conocimiento (BKT). 
+Esta variable fue operacionalizada mediante valores numéricos reales en el intervalo 
+$[0.0, 1.0]$, donde valores próximos a $1.0$ indican una alta probabilidad de que el estudiante haya alcanzado el dominio de la habilidad considerada \cite{ref9,ref11}.
+El sistema calcula la probabilidad de dominio por habilidad ($p_{\text{mastery}}$) de manera independiente para cada una de las habilidades evaluadas —en este estudio, la regla de la potencia y la regla de la cadena—, lo que permite monitorear con mayor nivel de detalle la progresión del estudiante en cada área específica del contenido.
+
 \subsubsection{Brier Score}
+El \textit{Brier Score} representa la calidad de calibración de las probabilidades de respuesta correcta predichas por el modelo, y se calcula como el error cuadrático medio entre las probabilidades predichas y los resultados observados. 
+Esta variable fue operacionalizada mediante valores numéricos reales en el intervalo $[0.0, 1.0]$, donde valores cercanos a $0.0$ indican predicciones bien calibradas \cite{ref11}.
+
+El cálculo del \textit{Brier Score} se realiza mediante la expresión:
+
+\begin{equation}
+\text{Brier} = \frac{1}{N} \sum_{i=1}^{N} \left( p_i - o_i \right)^2
+\end{equation}
+
+donde $p_i$ representa la probabilidad predicha de respuesta correcta para el ítem $i$, y $O_i$ corresponde al resultado observado, tomando el valor $1$ si la respuesta es correcta y $0$ en caso contrario. 
+Un valor de referencia ampliamente utilizado es $\text{Brier} = 0.25$, el cual corresponde a predicciones aleatorias en ítems binarios.
+
 \subsubsection{Latencia de respuesta del sistema}
+La latencia representa el tiempo transcurrido entre la recepción de una respuesta por parte del estudiante y la generación de la recomendación del siguiente ítem por el motor adaptativo. 
+Esta variable fue operacionalizada mediante valores numéricos enteros positivos expresados en milisegundos (ms), típicamente en el intervalo 
+$[50, 500]$ bajo condiciones normales de operación.
+
+Esta métrica resulta crítica para evaluar la viabilidad del sistema en contextos educativos reales, dado que latencias superiores a $500$~ms pueden degradar de forma perceptible la experiencia del usuario \cite{ref10}.
+
 \subsubsection{Número de ítems administrados hasta convergencia}
+El número de ítems hasta la convergencia representa la cantidad de ítems requeridos para alcanzar un nivel de precisión diagnóstica aceptable, definido como 
+$SE(\hat{\theta}) \leq 0.4$. 
+Esta variable fue operacionalizada mediante valores numéricos enteros positivos, típicamente en el intervalo 
+$[5, 20]$.
+
+Esta métrica permite evaluar la eficiencia del algoritmo adaptativo en términos del costo evaluativo, expresado como el número de ítems necesarios para obtener diagnósticos confiables.
+
 \subsection{Variables de control}
+Las variables de control corresponden a parámetros del sistema que permanecieron constantes durante todos los experimentos, con el objetivo de aislar los efectos de las variables independientes sobre las dependientes y garantizar la validez interna del diseño experimental.
 \subsubsection{Parámetros del modelo BKT por habilidad}
+Para cada una de las habilidades evaluadas, se mantuvieron constantes los siguientes parámetros del modelo bayesiano de rastreo de conocimiento (BKT):
+
+\begin{itemize}
+    \item $p_{L0}$: Probabilidad inicial de dominio de la habilidad. 
+    Se establecieron valores fijos de $0.20$ para la regla de la potencia y $0.15$ para la regla de la cadena.
+
+    \item $p_T$: Probabilidad de transición desde el estado de no dominio al estado de dominio como resultado de una interacción. 
+    Valor fijo: $0.10$.
+
+    \item $p_G$: Probabilidad de acierto por adivinanza cuando no existe dominio de la habilidad. 
+    Valor fijo: $0.25$.
+
+    \item $p_S$: Probabilidad de error por descuido (\textit{slip}) cuando el estudiante ha alcanzado el dominio. 
+    Valor fijo: $0.10$.
+
+    \item $p_F$: Probabilidad de olvido (\textit{decay}) del dominio adquirido. 
+    Valor fijo: $0.0$, asumido en ausencia de tiempo transcurrido entre interacciones.
+\end{itemize}
+
+Estos valores fueron seleccionados con base en parámetros típicos reportados en la literatura especializada sobre la aplicación del modelo BKT en dominios matemáticos \cite{ref9,ref11}.
+
 \subsubsection{Configuración del algoritmo EAP}
+Los parámetros de la estimación a posteriori esperada (EAP) se mantuvieron constantes durante todo el proceso de validación:
+
+\begin{itemize}
+    \item \textbf{Distribución a priori de la habilidad latente ($\theta$):} 
+    Distribución normal con media $\mu = 0.0$ y desviación estándar $\sigma = 1.0$.
+
+    \item \textbf{Rango del \textit{grid} de integración numérica:} 
+    Intervalo $[-4.0, +4.0]$.
+
+    \item \textbf{Número de puntos del \textit{grid}:} 
+    $161$ puntos equidistantes.
+\end{itemize}
+
+Esta configuración garantiza una precisión numérica suficiente en la estimación de la habilidad estimada ($\hat{\theta}$) mediante integración por cuadratura, de acuerdo con recomendaciones ampliamente documentadas en la literatura especializada \cite{ref4,ref5}.
+
 \subsubsection{Umbrales de decisión}
+Los siguientes umbrales de decisión fueron definidos para el funcionamiento del sistema adaptativo:
+
+\begin{itemize}
+    \item \textbf{Umbral de dominio (\,$\tau$\,):} 
+    Valor establecido en $0.85$. 
+    Se considera que un estudiante ha alcanzado el dominio de una habilidad cuando 
+    $p_{\text{mastery}} \geq 0.85$.
+
+    \item \textbf{Umbral de error estándar objetivo:} 
+    Valor establecido en $0.40$. 
+    El sistema considera que se ha alcanzado una precisión diagnóstica suficiente cuando 
+    $SE(\hat{\theta}) \leq 0.40$.
+
+    \item \textbf{Umbral de bajo dominio:} 
+    Valor establecido en $0.55$. 
+    Valores de $p_{\text{mastery}}$ inferiores a este umbral activan mecanismos de intervención y refuerzo pedagógico.
+\end{itemize}
+
 \subsubsection{Parámetros de decay temporal}
+\begin{itemize}
+    \item \textbf{Tasa de \textit{decay} por hora:} 
+    Valor establecido en $0.005$, aplicado de forma exponencial para modelar el proceso de olvido natural del conocimiento a lo largo del tiempo.
+\end{itemize}
+\subsubsection{Límites operativos}
+
+\begin{itemize}
+    \item \textbf{Número máximo de ítems por sesión:} 
+    $20$ ítems.
+
+    \item \textbf{Tiempo máximo de sesión:} 
+    $600{,}000$~ms ($10$ minutos).
+
+    \item \textbf{Ventana anti-repetición:} 
+    Los últimos $5$ ítems administrados no pueden ser seleccionados nuevamente.
+\end{itemize}
+
+La fijación de estas variables de control garantiza que las variaciones observadas en las variables dependientes sean atribuibles exclusivamente a las diferencias en las variables independientes manipuladas, fortaleciendo la validez interna del diseño experimental y facilitando la interpretación causal de los resultados \cite{ref10}.
+
 \subsection{Síntesis de variables}
 La Tabla~\ref{tab:variables-estudio} presenta una síntesis de las variables de la investigación, clasificadas según su rol en el diseño experimental, incluyendo su descripción, unidad de medida y rango de valores observados o asignados.
 \begin{table}[H]
@@ -657,3 +816,185 @@ Analizar viabilidad operativa \\
 \end{table}
 
 \section{Criterios de Validación y Aceptación}
+Establecer criterios claros de validación y definir desde el inicio qué umbrales se considerarán aceptables constituye un elemento metodológico crucial en investigaciones experimentales de ingeniería de software, más aún cuando se desarrollan sistemas adaptativos cuyo desempeño debe evaluarse comparándolo con estándares objetivos y replicables. Para este estudio, los criterios de validación se fijaron antes de realizar los experimentos—siguiendo la práctica del pre-registro científico—con el propósito de reforzar la validez interna del diseño experimental y minimizar el riesgo de que los resultados terminen condicionando su propia interpretación \cite{ref10}.
+
+Estos criterios se construyeron a partir de una revisión detallada de la literatura sobre sistemas de testing adaptativo computarizado (CAT), la Teoría de Respuesta al Ítem, los modelos de rastreo de conocimiento y los estándares de calidad de software, lo que permitió establecer umbrales que tienen sentido y están alineados con lo que hoy se considera buena práctica en evaluación adaptativa \cite{ref4,ref5,ref9,ref11}. Los criterios quedaron organizados en cinco áreas: precisión diagnóstica, eficiencia adaptativa, equidad entre grupos, calidad predictiva y rendimiento computacional.
+
+\subsection{Criterios de Precisión Diagnóstica}
+
+La precisión diagnóstica refiere a la capacidad del sistema para estimar correctamente la habilidad latente del estudiante, minimizando el error entre el valor verdadero ($\theta$) y el valor estimado ($\hat{\theta}$). Para esta dimensión se establecieron los siguientes criterios:
+
+\subsubsection{Criterio 1: Error Cuadrático Medio (RMSE)}
+
+El error cuadrático medio representa la magnitud promedio del error de estimación.
+
+\begin{equation}
+RMSE = \sqrt{\frac{1}{N} \sum_{i=1}^{N} \left( \theta_i - \hat{\theta}_i \right)^2}
+\end{equation}
+
+\textbf{Umbral de aceptación:} $RMSE(\theta) < 0.65$
+
+\textbf{Justificación:}  
+Los estudios sobre testing adaptativo muestran que sistemas CAT bien construidos suelen conseguir valores de RMSE entre 0.40 y 0.70 cuando se prueban inicialmente con simulaciones \cite{ref4,ref5}. Valores por debajo de 0.65 indican que el sistema está estimando la habilidad del estudiante con un error promedio menor a dos tercios de una desviación estándar en la escala logit, lo cual resulta aceptable para evaluaciones formativas y diagnósticas en contextos de educación superior.
+
+\subsubsection{Criterio 2: Reducción del Error Estándar}
+
+El error estándar de la estimación ($SE(\theta)$) debería ir disminuyendo conforme se van administrando ítems informativos, hasta converger hacia el umbral objetivo.
+
+\textbf{Umbral de aceptación:} $SE(\theta) \leq 0.40$ al finalizar la sesión
+
+\textbf{Justificación:}  
+Un error estándar de 0.40 implica que el intervalo de confianza del 95\% para la estimación de $\theta$ tiene un ancho aproximado de $\pm 0.78$ unidades logit, lo que permite clasificar al estudiante en diferentes categorías de desempeño con bastante seguridad \cite{ref4}. Este umbral coincide con las recomendaciones internacionales para evaluaciones adaptativas que buscan alta precisión.
+
+\subsection{Criterios de Eficiencia Adaptativa}
+
+La eficiencia adaptativa refleja qué tan bien el sistema logra alcanzar niveles aceptables de precisión diagnóstica utilizando pocos ítems, lo que se traduce en menor carga evaluativa para el estudiante.
+
+\subsubsection{Criterio 3: Número de Ítems para Convergencia}
+
+\textbf{Umbral de aceptación:} $N \leq 15$ ítems para alcanzar $SE(\theta) \leq 0.40$
+
+\textbf{Justificación:}  
+La literatura sobre sistemas CAT eficientes muestra que es posible alcanzar convergencia diagnóstica con apenas 10 a 20 ítems, lo que representa una reducción del 50--75\% comparado con evaluaciones lineales tradicionales \cite{ref4}. Fijar el límite en 15 ítems busca un balance: por un lado, minimizar el tiempo que el estudiante dedica a la evaluación y, por otro, garantizar que las estimaciones sean lo suficientemente estables. Este criterio está respaldado por lo que reportan estudios de evaluación adaptativa en contextos de educación superior \cite{ref5,ref9}.
+
+\subsection{Criterios de Equidad Diagnóstica}
+
+La equidad diagnóstica tiene que ver con mantener niveles de precisión comparables entre estudiantes de diferentes niveles de habilidad, evitando que el sistema favorezca o perjudique sistemáticamente a ciertos grupos.
+
+\subsubsection{Criterio 4: Variación del RMSE entre Grupos}
+
+Para evaluar esto, se analizó la consistencia del error de estimación dividiendo a los estudiantes en tres grupos según su habilidad real:
+
+\begin{itemize}
+    \item Grupo bajo: $\theta \in [-2.0, -0.67)$
+    \item Grupo medio: $\theta \in [-0.67, +0.67]$
+    \item Grupo alto: $\theta \in (+0.67, +2.0]$
+\end{itemize}
+
+\textbf{Umbral de aceptación:} Coeficiente de variación $CV(RMSE) < 40\%$
+
+Donde:
+
+\begin{equation}
+CV = \frac{\sigma_{RMSE}}{\mu_{RMSE}} \times 100\%
+\end{equation}
+
+\textbf{Justificación:}  
+Cuando el coeficiente de variación está por debajo del 40\%, significa que el sistema mantiene una precisión bastante uniforme sin importar el nivel de habilidad del estudiante, lo que resulta coherente con los criterios de equidad que se manejan en sistemas de medición educativa \cite{ref10}. Adicionalmente, se estableció como criterio alternativo que el RMSE más alto registrado entre los tres grupos no debía pasar de 0.70, evitando así que algún grupo quedara expuesto a errores de estimación demasiado grandes.
+
+\subsection{Criterios de Calidad Predictiva}
+
+La calidad predictiva mide qué tan acertadas son las probabilidades que el modelo calcula sobre si un estudiante responderá correctamente o no, verificando si lo que predice el sistema coincide con lo que termina pasando en la práctica.
+
+\subsubsection{Criterio 5: Brier Score}
+
+El Brier Score mide el error cuadrático medio entre las probabilidades predichas y los resultados binarios observados:
+
+\begin{equation}
+Brier = \frac{1}{N} \sum_{i=1}^{N} \left( p^i - O_i \right)^2
+\end{equation}
+
+\textbf{Umbral de aceptación:} Brier Score $< 0.30$
+
+\textbf{Justificación:}  
+Un modelo de predicción aleatoria en ítems binarios obtiene Brier = 0.25. Valores inferiores a 0.30 indican que el modelo tiene capacidad predictiva superior al azar, con predicciones razonablemente calibradas \cite{ref11}. Este umbral es consistente con modelos BKT e IRT reportados en la literatura para dominios educativos estructurados.
+
+\subsection{Criterios de Rendimiento Computacional}
+
+El rendimiento computacional evalúa si el sistema puede operar como un servicio de software real, respondiendo en tiempos razonables cuando enfrenta cargas de trabajo similares a las que existirían en un contexto educativo real. Este aspecto es crítico porque de nada sirve un sistema preciso si es tan lento que frustra a los usuarios \cite{ref10}.
+
+\subsubsection{Criterio 6: Latencia de Respuesta}
+
+\textbf{Umbral de aceptación:} Latencia P95 $< 500$ ms
+
+\textbf{Justificación:}  
+El percentil 95 es una forma de medir que ignora los casos más extremos: básicamente, nos dice que 95 de cada 100 peticiones se atienden en medio segundo o menos, dejando fuera solo los valores más raros que podrían dar una impresión distorsionada del desempeño general. Las directrices de Google Web Vitals plantean 500 ms como tope para que una aplicación interactiva se sienta ágil. Cuando el sistema tarda más que eso, los estudiantes comienzan a notar la demora, y esa lentitud percibida termina afectando su experiencia durante la evaluación \cite{ref10}.
+
+\subsubsection{Criterio 7: Estabilidad bajo Concurrencia}
+
+\textbf{Umbral de aceptación:} Tasa de error $< 1\%$ bajo carga de 50 usuarios concurrentes
+
+\textbf{Justificación:}  
+Mantener el error por debajo del 1\% equivale a decir que el sistema funciona correctamente el 99\% de las veces, incluso cuando hay 50 usuarios conectados simultáneamente. Para servicios educativos donde es importante que las evaluaciones no se interrumpan, este nivel de disponibilidad es lo mínimo aceptable, y está en línea con los estándares de servicio que se manejan en la industria del software \cite{ref10}.
+
+\subsection{Síntesis de los Criterios de Validación}
+
+La Tabla~\ref{tab:criterios-validacion} presenta una síntesis de los criterios de validación establecidos, incluyendo la hipótesis asociada, la métrica de evaluación, el umbral de aceptación y la fuente que respalda el criterio.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{spacing}{1}
+\begin{tabular}{|p{3.5cm}|p{5.0cm}|p{3.0cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\textbf{Dimensión} & \textbf{Hipótesis} & \textbf{Métrica} & \textbf{Umbral} & \textbf{Fuente} \\
+\hline
+Precisión diagnóstica &
+H1: El sistema estima $\theta$ con error aceptable &
+RMSE($\theta$) &
+$< 0.65$ &
+{[4], [5]} \\
+\cline{2-5}
+ &
+H2: El sistema reduce la incertidumbre diagnóstica &
+SE($\theta$) final &
+$\leq 0.40$ &
+{[4]} \\
+\hline
+Eficiencia adaptativa &
+H3: El sistema converge con pocos ítems &
+N ítems (SE$\leq$0.4) &
+$\leq 15$ &
+{[4], [5], [9]} \\
+\hline
+Equidad diagnóstica &
+H4: El sistema es equitativo entre grupos &
+CV(RMSE grupos) &
+$< 40\%$ &
+{[10]} \\
+\cline{3-5}
+ &
+ &
+RMSE máximo &
+$< 0.70$ &
+{[4]} \\
+\hline
+Calidad predictiva &
+H5: El modelo predice correctamente &
+Brier Score &
+$< 0.30$ &
+{[11]} \\
+\hline
+Rendimiento computacional &
+H6: El sistema responde rápidamente &
+Latencia P95 &
+$< 500$ ms &
+{[10]} \\
+\cline{2-5}
+ &
+H7: El sistema es estable bajo carga &
+Tasa de error &
+$< 1\%$ &
+{[10]} \\
+\hline
+\end{tabular}
+\end{spacing}
+\caption{Criterios de Validación y Aceptación del Sistema}
+\label{tab:criterios-validacion}
+\end{table}
+
+Haber definido estos criterios antes de ejecutar los experimentos responde a un principio metodológico importante: la pre-especificación de hipótesis. Trabajar así reduce considerablemente el riesgo de caer en interpretaciones sesgadas o de verse tentado a ajustar los umbrales de aceptación una vez que ya se conocen los resultados—algo que, aunque frecuente, compromete seriamente la validez del estudio. Esta práctica fortalece la validez interna de la investigación y es consistente con lo que se espera de un trabajo experimental riguroso en ingeniería de software \cite{ref10}.
+
+\subsection{Interpretación de los Resultados según los Criterios}
+
+La verificación de los criterios de validación se realizó de forma sistemática durante el análisis de resultados, clasificando el desempeño del sistema en tres categorías:
+
+\begin{itemize}
+    \item \textbf{Criterio cumplido:} El valor observado de la métrica se encuentra dentro del umbral de aceptación establecido, validando la hipótesis correspondiente.
+    \item \textbf{Criterio parcialmente cumplido:} El valor observado se aproxima al umbral (dentro del 10\% de tolerancia), sugiriendo un desempeño aceptable que podría mejorarse mediante ajustes finos del sistema.
+    \item \textbf{Criterio no cumplido:} El valor observado excede significativamente el umbral, indicando deficiencias que requieren revisión algorítmica o metodológica.
+\end{itemize}
+
+El cumplimiento de al menos 6 de los 7 criterios establecidos se consideró evidencia suficiente para validar técnicamente el Sistema de Evaluación Adaptativa, confirmando su viabilidad para avanzar hacia fases posteriores de validación con estudiantes reales.
+
+Finalmente, es importante destacar que estos criterios fueron diseñados específicamente para la fase de validación técnica y algorítmica mediante simulación computacional. La evaluación con estudiantes reales en contextos educativos auténticos requerirá la incorporación de criterios adicionales relacionados con usabilidad, aceptación pedagógica, impacto en el aprendizaje y satisfacción del usuario, aspectos que trascienden el alcance del presente estudio pero que resultan esenciales para una validación integral del sistema \cite{ref7,ref8}.
