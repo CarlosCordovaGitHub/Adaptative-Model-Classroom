@@ -154,37 +154,6 @@
       \verb 10.21556/edutec.2024.89.3025
       \endverb
     \endentry
-    \entry{ref8}{article}{}{}
-      \name{author}{1}{}{%
-        {{hash=1618f859bebc2dcd3ed823effde7e5ab}{%
-           family={Rodríguez\bibnamedelima Chávez},
-           familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod},
-           given={María\bibnamedelima H.},
-           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{fullhash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{fullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{bibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{authorbibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{authornamehash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{authorfullhash}{1618f859bebc2dcd3ed823effde7e5ab}
-      \strng{authorfullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{RIDE. Revista Iberoamericana para la Investigación y el Desarrollo Educativo}
-      \field{number}{22}
-      \field{title}{Sistemas de tutoría inteligente y su aplicación en la educación superior}
-      \field{volume}{12}
-      \field{year}{2021}
-      \field{pages}{e175}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.23913/ride.v11i22.848
-      \endverb
-    \endentry
     \entry{ref10}{article}{}{}
       \name{author}{3}{}{%
         {{hash=5dec13fbed9feebf31b34fc900f4264c}{%
@@ -356,6 +325,37 @@
       \field{year}{2010}
       \field{pages}{111\bibrangedash 122}
       \range{pages}{12}
+    \endentry
+    \entry{ref8}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1618f859bebc2dcd3ed823effde7e5ab}{%
+           family={Rodríguez\bibnamedelima Chávez},
+           familyi={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={María\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{fullhash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{fullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{bibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorbibnamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authornamehash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorfullhash}{1618f859bebc2dcd3ed823effde7e5ab}
+      \strng{authorfullhashraw}{1618f859bebc2dcd3ed823effde7e5ab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RIDE. Revista Iberoamericana para la Investigación y el Desarrollo Educativo}
+      \field{number}{22}
+      \field{title}{Sistemas de tutoría inteligente y su aplicación en la educación superior}
+      \field{volume}{12}
+      \field{year}{2021}
+      \field{pages}{e175}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.23913/ride.v11i22.848
+      \endverb
     \endentry
     \entry{ref9}{misc}{}{}
       \name{author}{1}{}{%

@@ -25,7 +25,7 @@
 
 \usepackage{datetime}
 \newdateformat{epnDate}{\monthname[\THEMONTH] \THEYEAR}
-\spanishdecimal{,}
+\spanishdecimal{.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Tablas y Matemática
@@ -120,6 +120,17 @@
 \newcommand{\titulosizq}{\sf\bf\sizecatorce}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Espaciado de títulos (corrige saltos grandes)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% {indent}{before}{after}
+\titlespacing*{\chapter}{0pt}{-12pt}{16pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   Profundidad de la Numeración
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \setcounter{secnumdepth}{3}
@@ -157,7 +168,41 @@
 %   (Opcional) Mejoras tipográficas
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{microtype}
+\usepackage{caption}
+
 \setlength{\emergencystretch}{3em}
+\addto\captionsspanish{%
+  \renewcommand{\tablename}{Tabla}%
+}
+
+\usepackage[table]{xcolor}
+\definecolor{verdozo}{RGB}{198,239,206} % verde suave tipo OK
+\addto\captionsspanish{%
+  \renewcommand{\contentsname}{ÍNDICE DE CONTENIDO}%
+}
+\renewcommand{\cfttoctitlefont}{\hfill\bfseries\sizecatorce}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftdotsep}{1}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+
+\makeatletter
+\renewcommand{\tableofcontents}{%
+  \cleardoublepage
+  \phantomsection
+  \vspace*{\cftbeforetoctitleskip}%
+  {\centering\bfseries\sizecatorce \contentsname\par}%
+  \vspace*{\cftaftertoctitleskip}%
+  \@starttoc{toc}%
+}
+\makeatother
+
+% Corrección de centrado de figuras y tablas
+\captionsetup{justification=centering}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   INICIO DOCUMENTO
@@ -181,11 +226,8 @@
 \input{frontmatter/04-agradecimientos}
 
 % ÍNDICE (tabla de contenido)
-\newpage
-\phantomsection
-\addcontentsline{toc}{chapter}{\normalfont ÍNDICE DE CONTENIDO}
-\chapter*{\titulos{ÍNDICE DE CONTENIDO}}
 \tableofcontents
+\addcontentsline{toc}{chapter}{\normalfont \contentsname}
 
 \input{frontmatter/05-resumen}
 \input{frontmatter/06-abstract}

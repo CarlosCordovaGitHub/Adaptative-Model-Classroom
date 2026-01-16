@@ -34,3 +34,25 @@ README copy.md
 .idea/
 .DS_Store
 Thumbs.db
+# --- LaTeX: Archivos temporales y de compilación ---
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Archivos temporales de errores / backups
+*-SAVE-ERROR
+*.bak
+*.tmp
+
+resultados_tests.txt
+/figure
+/__pycache__
