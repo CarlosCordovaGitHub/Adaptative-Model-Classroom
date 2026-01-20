@@ -40,6 +40,8 @@ La Tabla~\ref{tab:verificacion-criterios} resume los resultados obtenidos en la 
 
 \begin{table}[H]
 \centering
+\caption{Verificación de criterios de validación técnica}
+\label{tab:verificacion-criterios}
 \renewcommand{\arraystretch}{1.15}
 \begin{spacing}{1}
 \small
@@ -63,8 +65,6 @@ H7 & Estabilidad & Tasa error & $< 1\%$ & 0.0\% & \cellcolor{verdozo}\textbf{OK}
 \hline
 \end{tabular}
 \end{spacing}
-\caption{Verificación de criterios de validación técnica}
-\label{tab:verificacion-criterios}
 \end{table}
 
 \textbf{Resultado global:} El sistema cumplió 7/7 criterios de validación (100\%), superando los umbrales de aceptación definidos en todos los aspectos evaluados.\\
@@ -80,6 +80,8 @@ La Tabla~\ref{tab:convergencia-theta}  presenta los resultados detallados de la 
 
 \begin{table}[H]
 \centering
+\caption{Resultados del Test de Convergencia de Habilidad Latente}
+\label{tab:convergencia-theta}
 \renewcommand{\arraystretch}{1.2}
 \begin{spacing}{1}
 \begin{tabular}{|p{2.5cm}|p{2.8cm}|p{3.0cm}|p{3.0cm}|}
@@ -106,8 +108,6 @@ La Tabla~\ref{tab:convergencia-theta}  presenta los resultados detallados de la 
 \hline
 \end{tabular}
 \end{spacing}
-\caption{Resultados del Test de Convergencia de Habilidad Latente}
-\label{tab:convergencia-theta}
 \end{table}
 
 \textbf{Métricas agregadas:}
@@ -140,7 +140,7 @@ Este test evaluó la capacidad del sistema para reducir progresivamente la incer
 \textbf{Resultados:}
 
 \begin{itemize}
-    \item \textbf{SE($\theta$) inicial:} 0.9305 (prior N(0,1))
+    \item \textbf{SE($\theta$) inicial:} 0.9305 (prior $N(0.1)$)
     \item \textbf{SE($\theta$) final:} 0.6744
     \item \textbf{Reducción absoluta:} 0.2562 (27.5\% de reducción)
     \item \textbf{Monotonicidad:} 100.0\% (el SE($\theta$) disminuyó en cada iteración sin incrementos)
@@ -167,6 +167,8 @@ La Tabla~\ref{tab:items-convergencia-normal} presenta los Ítems requeridos para
 
 \begin{table}[H]
 \centering
+\caption{Ítems requeridos para alcanzar convergencia diagnóstica}
+\label{tab:items-convergencia-normal}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|c|c|l|}
 \hline
@@ -193,8 +195,6 @@ sim\_student\_009 & +2.0 & 4 & Excepcional \\
 sim\_student\_010 & Aleatorio & 7 & Muy eficiente \\
 \hline
 \end{tabular}
-\caption{Ítems requeridos para alcanzar convergencia diagnóstica}
-\label{tab:items-convergencia-normal}
 \end{table}
 
 \textbf{Métricas agregadas:}
@@ -234,6 +234,8 @@ Se dividieron los estudiantes en tres grupos según su habilidad real:
 
 \begin{table}[H]
 \centering
+\caption{Equidad Diagnóstica por Grupo de Habilidad}
+\label{tab:equidad-diagnostica}
 \renewcommand{\arraystretch}{1.2}
 \begin{tabular}{|l|c|c|l|}
 \hline
@@ -246,8 +248,6 @@ Medio & $[-0.67, +0.67]$ & $0.482$ & Bueno \\
 Alto & $(+0.67, +2.0]$ & $0.507$ & Aceptable \\
 \hline
 \end{tabular}
-\caption{Equidad Diagnóstica por Grupo de Habilidad}
-\label{tab:equidad-diagnostica}
 \end{table}
 
 \textbf{Métricas de equidad:}
@@ -357,6 +357,8 @@ La Tabla~\ref{tab:rendimiento_carga} presenta las Métricas de Rendimiento bajo 
 
 \begin{table}[H]
 \centering
+\caption{Métricas de Rendimiento bajo Carga}
+\label{tab:rendimiento_carga}
 \begin{tabular}{|l|c|c|c|}
 \hline
 \textbf{Métrica} & \textbf{Valor Observado} & \textbf{Umbral} & \textbf{Estado} \\
@@ -375,8 +377,7 @@ Usuarios concurrentes máx. & 50 & 50 & Objetivo \\
 \hline
 
 \end{tabular}
-\caption{Métricas de Rendimiento bajo Carga}
-\label{tab:rendimiento_carga}
+
 \end{table}
 
 \textbf{Análisis de las gráficas de Locust:}
@@ -427,6 +428,8 @@ La Tabla~\ref{tab:decay_temporal} resume los resultados del análisis del decaim
 
 \begin{table}[H]
 \centering
+\caption{Análisis del Decaimiento Temporal del Conocimiento}
+\label{tab:decay_temporal}
 \begin{tabular}{|l|c|l|}
 \hline
 \textbf{Métrica} & \textbf{Valor} & \textbf{Observación} \\
@@ -440,8 +443,6 @@ Caída absoluta & 0.1796 & Reducción de 17.96 puntos \\
 Caída relativa & 18.0\% & Pérdida porcentual de dominio \\
 \hline
 \end{tabular}
-\caption{Análisis del Decaimiento Temporal del Conocimiento}
-\label{tab:decay_temporal}
 \end{table}
 
 
@@ -473,6 +474,8 @@ La validación técnica del Sistema de Evaluación Adaptativa mediante simulaci�
 
 \begin{table}[H]
 \centering
+\caption{Síntesis Global de Resultados de Validación}
+\label{tab:Sintesis}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Dimensión Evaluada} & \textbf{Métrica Principal} & \textbf{Resultado} & \textbf{Evaluación} \\
@@ -488,8 +491,6 @@ Determinismo & Reproducibilidad & $100\%$ & Exacta \\
 Decay temporal & Pérdida 7 días & $18\%$ & Realista \\
 \hline
 \end{tabular}
-\caption{Síntesis Global de Resultados de Validación}
-\label{tab:Sintesis}
 \end{table}
 
 El sistema cumplió 7/7 criterios de validación técnica (100\%), demostrando:

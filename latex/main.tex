@@ -1,4 +1,4 @@
-% !TeX program = pdflatex
+% !TeX program = xelatex
 \documentclass[11pt,a4paper]{report}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -11,7 +11,6 @@
 \listfiles
 
 \usepackage[activeacute,spanish]{babel}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
 \usepackage[
@@ -199,7 +198,22 @@
 \makeatother
 
 % Corrección de centrado de figuras y tablas
-\captionsetup{justification=centering}
+% Corrección de centrado y formato de captions (Tablas y Figuras)
+\captionsetup{
+  justification=centering
+}
+
+% Tablas: "Tabla 1.1." en negrilla y separador con punto (sin ":")
+\captionsetup[table]{
+  labelfont=bf,
+  labelsep=period
+}
+
+\captionsetup[figure]{
+  labelfont=bf,
+  labelsep=period
+}
+
 \setlength{\LTleft}{0pt}
 \setlength{\LTright}{0pt}
 

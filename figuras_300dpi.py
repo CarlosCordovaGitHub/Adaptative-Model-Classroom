@@ -9,22 +9,31 @@ import json
 import os
 from pathlib import Path
 
-# Configuración de estilo para figuras académicas
+# ============================================================================
+# CONFIGURACIÓN DE ESTILO Y CALIDAD
+# ============================================================================
 plt.style.use('seaborn-v0_8-darkgrid')
 plt.rcParams['figure.figsize'] = (10, 6)
-plt.rcParams['font.size'] = 11
-plt.rcParams['axes.titlesize'] = 14
-plt.rcParams['axes.labelsize'] = 12
-plt.rcParams['xtick.labelsize'] = 10
-plt.rcParams['ytick.labelsize'] = 10
 
-# Salida nítida para tesis (vector + raster alta resolución)
-plt.rcParams['figure.dpi'] = 150              # dpi en pantalla (no afecta guardado)
-plt.rcParams['savefig.dpi'] = 300            # dpi por defecto al guardar
-plt.rcParams['pdf.fonttype'] = 42            # incrusta fuentes TrueType en PDF
+# FUENTES (Aumentadas como pediste)
+plt.rcParams['font.size'] = 14
+plt.rcParams['axes.titlesize'] = 16
+plt.rcParams['axes.labelsize'] = 16
+plt.rcParams['xtick.labelsize'] = 12
+plt.rcParams['ytick.labelsize'] = 12
+plt.rcParams['legend.fontsize'] = 12
+
+# --- CALIDAD DE IMAGEN (DPI) ---
+plt.rcParams['figure.dpi'] = 150        # Calidad en la ventana de vista previa
+plt.rcParams['savefig.dpi'] = 400       # <--- CAMBIO: Calidad base al guardar (Antes 300)
+
+# FUENTES EN VECTORIALES
+plt.rcParams['pdf.fonttype'] = 42       # Importante: Incrusta fuentes reales (editable)
 plt.rcParams['ps.fonttype'] = 42
 
-DPI_PNG = 600  # Para PNG muy nítido (Word/LaTeX). Puedes bajar a 300 si quieres.
+# VARIABLE PARA PNG DE ULTRA-ALTA CALIDAD
+DPI_PNG = 800  # <--- CAMBIO: Subido a 800 dpi (Antes 600). 
+               # Esto hará que las imágenes pesen más, pero sean "infinitas" al zoom.
 
 # Crear carpeta para guardar figuras
 OUTPUT_DIR = Path("figures2")
@@ -59,9 +68,10 @@ def figura_1_convergencia():
     
     # Línea de referencia perfecta (y = x)
     lim_min, lim_max = -2.5, 2.5
+    # CORREGIDO: Uso de r'' para LaTeX
     ax.plot([lim_min, lim_max], [lim_min, lim_max], 
             'k--', linewidth=2, alpha=0.5, 
-            label='Estimación perfecta ($\hat{\theta}$ = θ)')
+            label=r'Estimación perfecta ($\hat{\theta} = \theta$)')
     
     # Bandas de error aceptable (±0.5)
     ax.fill_between([lim_min, lim_max], 
@@ -76,7 +86,7 @@ def figura_1_convergencia():
                    xy=(x, y), 
                    xytext=(5, 5),
                    textcoords='offset points',
-                   fontsize=9,
+                   fontsize=11, # Aumentado ligeramente
                    bbox=dict(boxstyle='round,pad=0.3', 
                            facecolor='white', 
                            edgecolor='gray',
@@ -85,11 +95,14 @@ def figura_1_convergencia():
     # Configuración de ejes
     ax.set_xlim(lim_min, lim_max)
     ax.set_ylim(lim_min, lim_max)
-    ax.set_xlabel('Habilidad Real (θ)', fontsize=13, fontweight='bold')
-    ax.set_ylabel('Habilidad Estimada ($\hat{\theta}$)', fontsize=13, fontweight='bold')
-    ax.set_title('Figura 1: Convergencia de la Estimación de Habilidad Latente\n' +
-                'Comparación entre θ Real y $\hat{\theta}$ Estimado por EAP',
-                fontsize=14, fontweight='bold', pad=15)
+    # CORREGIDO: Uso de r'' para LaTeX
+    ax.set_xlabel(r'Habilidad Real ($\theta$)', fontweight='bold')
+    ax.set_ylabel(r'Habilidad Estimada ($\hat{\theta}$)', fontweight='bold')
+    
+    # TÍTULO ELIMINADO
+    # ax.set_title('Figura 1: Convergencia de la Estimación de Habilidad Latente\n' +
+    #             'Comparación entre θ Real y $\hat{\theta}$ Estimado por EAP',
+    #             fontsize=14, fontweight='bold', pad=15)
     
     # Grid
     ax.grid(True, alpha=0.3, linestyle='--')
@@ -97,18 +110,19 @@ def figura_1_convergencia():
     
     # Leyenda (colócala fuera del área del gráfico para evitar solapes)
     ax.legend(loc='upper left', bbox_to_anchor=(0.0, 1.02),
-              fontsize=10, framealpha=0.9, borderaxespad=0.0)
+              framealpha=0.9, borderaxespad=0.0)
     
     # Colorbar
     cbar = plt.colorbar(scatter, ax=ax)
-    cbar.set_label('Error Absoluto |θ - $\hat{\theta}$|', rotation=270, labelpad=20, fontsize=11)
+    # CORREGIDO: Uso de r'' para LaTeX
+    cbar.set_label(r'Error Absoluto |$\theta - \hat{\theta}$|', rotation=270, labelpad=25)
     
     # Estadísticas en el gráfico
     rmse = np.sqrt(np.mean((theta_real - theta_estimado)**2))
     mae = np.mean(errores)
     textstr = f'RMSE = {rmse:.3f}\nMAE = {mae:.3f}\nN = {len(theta_real)}'
     props = dict(boxstyle='round', facecolor='wheat', alpha=0.8)
-    ax.text(0.02, 0.88, textstr, transform=ax.transAxes, fontsize=11,
+    ax.text(0.02, 0.88, textstr, transform=ax.transAxes, fontsize=12,
             verticalalignment='top', bbox=props)
     
     plt.tight_layout()
@@ -145,7 +159,7 @@ def figura_2_evolucion_se():
             markersize=8,
             linewidth=2.5, 
             color='steelblue',
-            label='SE(θ) observado')
+            label=r'SE($\theta$) observado')
     
     # Línea de umbral objetivo
     ax.axhline(y=se_target, 
@@ -172,25 +186,28 @@ def figura_2_evolucion_se():
                    xy=(items[conv_idx], se_values[conv_idx]),
                    xytext=(items[conv_idx] + 2, se_values[conv_idx] + 0.1),
                    arrowprops=dict(arrowstyle='->', color='green', lw=2),
-                   fontsize=10,
+                   fontsize=12,
                    bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgreen', alpha=0.8))
     
     # Configuración
-    ax.set_xlabel('Número de Ítems Administrados', fontsize=13, fontweight='bold')
-    ax.set_ylabel('Error Estándar SE(θ)', fontsize=13, fontweight='bold')
-    ax.set_title('Figura 2: Evolución del Error Estándar de Estimación\n' +
-                'Reducción Progresiva de la Incertidumbre Diagnóstica',
-                fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlabel('Número de Ítems Administrados', fontweight='bold')
+    # CORREGIDO: Uso de r'' para LaTeX
+    ax.set_ylabel(r'Error Estándar SE($\theta$)', fontweight='bold')
+    
+    # TÍTULO ELIMINADO
+    # ax.set_title('Figura 2: Evolución del Error Estándar de Estimación\n' +
+    #             'Reducción Progresiva de la Incertidumbre Diagnóstica',
+    #             fontsize=14, fontweight='bold', pad=15)
     
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    ax.legend(loc='upper right', fontsize=10, framealpha=0.9)
+    ax.legend(loc='upper right', framealpha=0.9)
     
     # Estadísticas
     reduccion_pct = ((se_inicial - se_values[-1]) / se_inicial) * 100
     textstr = f'SE inicial: {se_inicial:.3f}\nSE final: {se_values[-1]:.3f}\nReducción: {reduccion_pct:.1f}%'
     props = dict(boxstyle='round', facecolor='lightblue', alpha=0.8)
-    ax.text(0.02, 0.88, textstr, transform=ax.transAxes, fontsize=11,
+    ax.text(0.02, 0.88, textstr, transform=ax.transAxes, fontsize=12,
             verticalalignment='top', bbox=props)
     
     ax.set_ylim(0, se_inicial + 0.1)
@@ -250,27 +267,30 @@ def figura_3_histograma_items():
         ax.text(bar.get_x() + bar.get_width()/2., height + 0.3,
                 f'{val}',
                 ha='center', va='bottom', 
-                fontsize=11, fontweight='bold')
+                fontsize=12, fontweight='bold')
     
     # Configuración
-    ax.set_xlabel('Estudiante Virtual', fontsize=13, fontweight='bold')
-    ax.set_ylabel('Ítems Requeridos para SE(θ) ≤ 0.40', fontsize=13, fontweight='bold')
-    ax.set_title('Figura 3: Eficiencia del Sistema Adaptativo\n' +
-                'Distribución de Ítems Requeridos para Convergencia',
-                fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlabel('Estudiante Virtual', fontweight='bold')
+    # CORREGIDO: Uso de r'' para LaTeX
+    ax.set_ylabel(r'Ítems Requeridos para SE($\theta$) ≤ 0.40', fontweight='bold')
+    
+    # TÍTULO ELIMINADO
+    # ax.set_title('Figura 3: Eficiencia del Sistema Adaptativo\n' +
+    #             'Distribución de Ítems Requeridos para Convergencia',
+    #             fontsize=14, fontweight='bold', pad=15)
     
     ax.grid(True, axis='y', alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    ax.legend(loc='upper right', fontsize=11, framealpha=0.9)
+    ax.legend(loc='upper right', framealpha=0.9)
     
     # Estadísticas
     pct_bajo_15 = (np.array(items_requeridos) <= 15).sum() / len(items_requeridos) * 100
     textstr = (f'Promedio: {promedio:.1f} ítems\n'
-              f'Mínimo: {min(items_requeridos)} ítems\n'
-              f'Máximo: {max(items_requeridos)} ítems\n'
-              f'≤15 ítems: {pct_bajo_15:.0f}%')
+               f'Mínimo: {min(items_requeridos)} ítems\n'
+               f'Máximo: {max(items_requeridos)} ítems\n'
+               f'≤15 ítems: {pct_bajo_15:.0f}%')
     props = dict(boxstyle='round', facecolor='lightyellow', alpha=0.9)
-    ax.text(0.02, 0.98, textstr, transform=ax.transAxes, fontsize=11,
+    ax.text(0.02, 0.98, textstr, transform=ax.transAxes, fontsize=12,
             verticalalignment='top', bbox=props)
     
     ax.set_ylim(0, max(items_requeridos) + 2)
@@ -291,7 +311,10 @@ def figura_4_equidad():
     """Gráfica de barras comparando RMSE entre grupos de habilidad"""
     
     # Datos reales de tu test
-    grupos = ['Bajo\n(θ < -0.67)', 'Medio\n(-0.67 ≤ θ ≤ 0.67)', 'Alto\n(θ > 0.67)']
+    # CORREGIDO: Uso de r'' para LaTeX
+    grupos = [r'Bajo' + '\n' + r'($\theta < -0.67$)', 
+              r'Medio' + '\n' + r'($-0.67 \leq \theta \leq 0.67$)', 
+              r'Alto' + '\n' + r'($\theta > 0.67$)']
     rmse_valores = [0.378, 0.482, 0.507]
     
     fig, ax = plt.subplots(figsize=(10, 7))
@@ -320,27 +343,29 @@ def figura_4_equidad():
         ax.text(bar.get_x() + bar.get_width()/2., height + 0.01,
                 f'{val:.3f}',
                 ha='center', va='bottom', 
-                fontsize=13, fontweight='bold')
+                fontsize=14, fontweight='bold')
     
     # Configuración
-    ax.set_ylabel('RMSE (Error Cuadrático Medio)', fontsize=13, fontweight='bold')
-    ax.set_xlabel('Grupo de Habilidad', fontsize=13, fontweight='bold')
-    ax.set_title('Figura 4: Equidad Diagnóstica entre Grupos de Habilidad\n' +
-                'Comparación de Precisión por Nivel de Estudiante',
-                fontsize=14, fontweight='bold', pad=15)
+    ax.set_ylabel('RMSE (Error Cuadrático Medio)', fontweight='bold')
+    ax.set_xlabel('Grupo de Habilidad', fontweight='bold')
+    
+    # TÍTULO ELIMINADO
+    # ax.set_title('Figura 4: Equidad Diagnóstica entre Grupos de Habilidad\n' +
+    #             'Comparación de Precisión por Nivel de Estudiante',
+    #             fontsize=14, fontweight='bold', pad=15)
     
     ax.grid(True, axis='y', alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    ax.legend(loc='upper left', fontsize=11, framealpha=0.9)
+    ax.legend(loc='upper left', framealpha=0.9)
     
     # Estadísticas
     cv = (np.std(rmse_valores) / np.mean(rmse_valores)) * 100
     textstr = (f'RMSE promedio: {np.mean(rmse_valores):.3f}\n'
-              f'Coef. variación: {cv:.1f}%\n'
-              f'Diferencia máx: {max(rmse_valores) - min(rmse_valores):.3f}\n'
-              f'OK: Todos los grupos < {umbral_max}')
+               f'Coef. variación: {cv:.1f}%\n'
+               f'Diferencia máx: {max(rmse_valores) - min(rmse_valores):.3f}\n'
+               f'OK: Todos los grupos < {umbral_max}')
     props = dict(boxstyle='round', facecolor='lightgreen', alpha=0.8)
-    ax.text(0.98, 0.98, textstr, transform=ax.transAxes, fontsize=11,
+    ax.text(0.98, 0.98, textstr, transform=ax.transAxes, fontsize=12,
             verticalalignment='top', horizontalalignment='right', bbox=props)
     
     ax.set_ylim(0, max(rmse_valores) + 0.15)
@@ -400,44 +425,47 @@ def figura_6_decay():
     
     # Umbral de mastery
     umbral = 0.85
+    # CORREGIDO: Uso de r'' para LaTeX
     ax.axhline(y=umbral, 
                color='orange', 
                linestyle='--', 
                linewidth=2,
-               label=f'Umbral de dominio (τ = {umbral})')
+               label=r'Umbral de dominio ($\tau = ' + str(umbral) + r'$)')
     
     # Anotaciones
     ax.annotate(f'Mastery = {mastery_inicial:.3f}', 
                xy=(0, mastery_inicial),
                xytext=(1, mastery_inicial + 0.03),
-               fontsize=11,
+               fontsize=12,
                bbox=dict(boxstyle='round,pad=0.5', facecolor='lightgreen', alpha=0.8))
     
     ax.annotate(f'Mastery = {mastery_7dias:.3f}\n(Tras 7 días)', 
                xy=(7, mastery_7dias),
                xytext=(8.5, mastery_7dias - 0.05),
-               fontsize=11,
+               fontsize=12,
                arrowprops=dict(arrowstyle='->', color='red', lw=1.5),
                bbox=dict(boxstyle='round,pad=0.5', facecolor='lightcoral', alpha=0.8))
     
     # Configuración
-    ax.set_xlabel('Días sin Práctica', fontsize=13, fontweight='bold')
-    ax.set_ylabel('Probabilidad de Dominio (p_mastery)', fontsize=13, fontweight='bold')
-    ax.set_title('Figura 6: Decaimiento Temporal del Conocimiento\n' +
-                'Modelado de la Curva del Olvido (Ebbinghaus)',
-                fontsize=14, fontweight='bold', pad=15)
+    ax.set_xlabel('Días sin Práctica', fontweight='bold')
+    ax.set_ylabel('Probabilidad de Dominio (p_mastery)', fontweight='bold')
+    
+    # TÍTULO ELIMINADO
+    # ax.set_title('Figura 6: Decaimiento Temporal del Conocimiento\n' +
+    #             'Modelado de la Curva del Olvido (Ebbinghaus)',
+    #             fontsize=14, fontweight='bold', pad=15)
     
     ax.grid(True, alpha=0.3, linestyle='--')
     ax.set_axisbelow(True)
-    ax.legend(loc='upper right', fontsize=10, framealpha=0.9)
+    ax.legend(loc='upper right', framealpha=0.9)
     
     # Estadísticas
     textstr = (f'Decay rate: {decay_rate:.4f} por hora\n'
-              f'Factor 7 días: {np.exp(-decay_rate * 168):.3f}\n'
-              f'Pérdida: {(mastery_inicial - mastery_7dias):.3f}\n'
-              f'% perdido: {((mastery_inicial - mastery_7dias)/mastery_inicial*100):.1f}%')
+               f'Factor 7 días: {np.exp(-decay_rate * 168):.3f}\n'
+               f'Pérdida: {(mastery_inicial - mastery_7dias):.3f}\n'
+               f'% perdido: {((mastery_inicial - mastery_7dias)/mastery_inicial*100):.1f}%')
     props = dict(boxstyle='round', facecolor='wheat', alpha=0.8)
-    ax.text(0.02, 0.25, textstr, transform=ax.transAxes, fontsize=11,
+    ax.text(0.02, 0.25, textstr, transform=ax.transAxes, fontsize=12,
             verticalalignment='top', bbox=props)
     
     ax.set_xlim(-0.5, 14.5)
